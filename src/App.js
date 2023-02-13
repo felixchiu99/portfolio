@@ -89,6 +89,7 @@ function App() {
                 <div class="round" style={{background:"white", color: "black"}}>
                     <h4>Goat simulator simulator</h4>
                     <YoutubeEmbed embedId="4VB93oPm0m0" />
+                    <YoutubeEmbed embedId="BxJtYHKY5F4" />
                     <p class="description">
                         Basicly a shameless low quality ripoff of the original goat simulator... 
                     </p>
