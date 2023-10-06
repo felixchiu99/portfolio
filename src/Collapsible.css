@@ -1,0 +1,16 @@
+/* CSS */
+    
+.header{
+  cursor: pointer;
+  text-decoration-line: underline;
+  color: #61aeb8;
+  font-family: verdana;
+  clear: right;
+}
+  
+.content{
+  border-radius: 0 0 5px 5px;
+  padding: 15px;
+  font-family: verdana;
+  font-size: 14px;
+}

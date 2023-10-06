@@ -9,15 +9,57 @@ function Home() {
                 <h1> Felix Chiu's Portfolio</h1>
                 <header className="Project">
                     <p class="description">
-                        Hi! I am Felix and I am currently studying in Newcastle University in MSc Computer Game Engineering.
+                        Hi! I am Felix and I am a graduate of Newcastle University in MSc Computer Game Engineering.
                         <br></br> 
                         The course specialise in teaching student game graphic via shaders, game engine physics and various other game Technologies such as game AI and networking.
                         <br></br>
                         I am currently seeking employment in the video game industry as a graduate programer.
                         <br></br>
-                        These is a place for me to store and show my projects during my studies.
+                        This is a place for me to store and show my projects during my studies.
                     </p>
                 </header>
+            </header>
+
+            <header className="Project">
+                <h3>CSC8599 StuBrew: A VR Brewing experience</h3>
+                <div class="row">
+                    <div class="column">
+                        <div class="round">
+                            <div>
+                                <p class="description">
+                                    This project serve as the dissertation project for my game engineering masters degree.
+                                    StuBrew is a student-run microbrewery in newcastle university 
+                                    and this project was created with their use when they attend brewing festivals in mind.
+                                </p>
+                                <p class="description">
+                                    It is a single person project about showing people the in's and out's of brewing beer. 
+                                    The player can brew beers and sell it at a "stall", which was similar to the StuBrew's regular operations.
+                                </p>
+                                <p class="description">
+                                    The Final game is playable in both VR and in standard PC.
+                                </p>
+                                
+                                <a href="/portfolio/#/CSC8599" class="description">
+                                    <button class="button">Read More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column" >
+                        <div class="round" style={{background:"white", color: "black"}}>
+                            <h4>StuBrew: Demo</h4>
+                            <YoutubeEmbed embedId="DK0heSvBuV8" />
+                            <p class="description">
+                                Brewing and Selling to your hearts content.
+                            </p>
+                            <div>
+                                <a href="https://github.com/felixchiu99/StuBrew">
+                                    <button class="button">Repository</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <header className="Project">
@@ -32,7 +74,7 @@ function Home() {
                                 <br></br><br></br>
                                 My Main Contribution is the network multiplayer part as well as the player controller.
                                 <br></br><br></br>
-                                <a href="/CSC8508">
+                                <a href="/portfolio/#/CSC8508">
                                     <button class="button">Read More</button>
                                 </a>
                             </p>
@@ -46,7 +88,7 @@ function Home() {
                                 Can you dodge your way to success?
                             </p>
                             <div>
-                                <a href="https://github.com/felixchiu99/VR_Archery">
+                                <a href="https://github.com/blacktack2/MastersGroupProject2023">
                                     <button class="button">Repository</button>
                                 </a>
                             </div>
@@ -65,7 +107,7 @@ function Home() {
                                 <br></br>
                                 The idea is to make a VR game to mimic the process of a archery competition and see if VR can help with training archery.
                                 <br></br><br></br>
-                                <a href="/ArcheryVR">
+                                <a href="/portfolio/#/ArcheryVR">
                                     <button class="button">Read More</button>
                                 </a>
                             </p>
