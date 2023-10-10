@@ -63,7 +63,7 @@ function Home() {
             </header>
 
             <header className="Project">
-                <h3>CSC8508 Team Project</h3>
+                <h3>CSC8508 InkHell (Team Project)</h3>
                 <div class="row">
                     <div class="column">
                         <div class="round">
@@ -72,7 +72,7 @@ function Home() {
                                 The requirement is for us to ultilies a "paint" mechanic as a core gameplay feature.
                                 The game we made is a 3D bullet hell where you need to survive the paint and defeat the boss.
                                 <br></br><br></br>
-                                My Main Contribution is the network multiplayer part as well as the player controller.
+                                My Main Contribution is the network multiplayer, player controller and general bugfixes/balancing. More in the details.
                                 <br></br><br></br>
                                 <a href="/portfolio/#/CSC8508">
                                     <button class="button">Read More</button>
