@@ -16,7 +16,7 @@ function Home() {
                         <br></br>
                         I am currently seeking employment in the video game industry as a graduate programer.
                         <br></br>
-                        This is a place for me to store and show my projects during my studies.
+                        This is a place for me to store and show my projects.
                     </p>
                 </header>
             </header>
