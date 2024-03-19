@@ -11,11 +11,9 @@ export default function Component() {
                 </h4>
 
                 <p class="description" style={{ "padding-left": "0%", "padding-right": "6%" }}>
-                    This is the Stage where I Experiment with some core ideas before worrying about making a polished experience.
+                    This is a page where I have written out some design consideration for this game.
                 </p>
-                <p class="description" style={{ "padding-left": "0%", "padding-right": "6%" }}>
-                    The following is a list of system I wanted to experiment with before creating a playable release.
-                </p>
+                
             </header>
 
         </div>
