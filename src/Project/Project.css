@@ -97,6 +97,13 @@
     text-align: left;
 }
 
+.Hyperlink {
+    cursor: pointer;
+    text-decoration-line: underline;
+    color: #61aeb8;
+    font-family: verdana;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

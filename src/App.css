@@ -68,6 +68,22 @@
   margin-bottom: 2%;
 }
 
+.ProjectAlt {
+    background-color: #60656e;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 25px;
+    padding: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 .button {
   background-color: #61aeb8;
   border-radius: 10px;
@@ -100,8 +116,20 @@
   position: absolute;
 }
 
+.Planning {
+    color: darkcyan;
+}
+
+.Ongoing {
+    color: cyan;
+}
+
+.Completed {
+    color: darkseagreen;
+}
+
 @keyframes App-logo-spin {
-  from {
+    from {
     transform: rotate(0deg);
   }
   to {
