@@ -49,7 +49,7 @@ export default function Project() {
                             The First Prototype Gameplay System (Weapon Prototype) for the Airship Project.
                         </p>
                         <div>
-                            <a href="https://github.com/felixchiu99/StuBrew">
+                            <a href="https://github.com/felixchiu99/AeroKingdom_Airships">
                                 <button class="button">Repository</button>
                             </a>
                         </div>
