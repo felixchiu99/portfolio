@@ -16,6 +16,9 @@ export default function Project() {
                             <h4 class="description">
                                 Game Engine: Unreal Engine 5
                             </h4>
+                            <h5 class="description">
+                                Current Focus: UI
+                            </h5>
                             <p class="description">
                                 I have always wanted to make a Airship based game in the past.
                                 I started to brainstorm this idea in Unity during easter 2023, but the coursework has paused the game making process.
@@ -44,10 +47,10 @@ export default function Project() {
                 <div class="column" >
                     <div class="round" style={{ background: "white", color: "black" }}>
                         <h4>Latest Clips</h4>
-                        <YoutubeEmbed embedId="1BTy-twodkk" />
-                        <p class="description">
-                            The First Prototype Gameplay System (Weapon Prototype) for the Airship Project.
-                        </p>
+                        <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
+                            <YoutubeEmbed embedId="GmV63ISOkik" />
+                            <p>The Second Prototype Gameplay System (Airship Prototype) for the Airship Project.</p>
+                        </div>
                         <div>
                             <a href="https://github.com/felixchiu99/AeroKingdom_Airships">
                                 <button class="button">Repository</button>

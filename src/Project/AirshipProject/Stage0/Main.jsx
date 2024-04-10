@@ -19,8 +19,8 @@ function Airship() {
 
                 <ul class="description">
                     <li><Collapsible title="Weapons (Completed)"> <Stage0.Weapon></Stage0.Weapon> </Collapsible></li>
-                    <li><Collapsible title="Airship (Ongoing)"> <Stage0.Airship></Stage0.Airship> </Collapsible></li>
-                    <li><Collapsible title="UI Menu (Planning)"> <Stage0.UIMenu></Stage0.UIMenu> </Collapsible></li>
+                    <li><Collapsible title="Airship (Completed)"> <Stage0.Airship></Stage0.Airship> </Collapsible></li>
+                    <li><Collapsible title="UI Menu (Ongoing)"> <Stage0.UIMenu></Stage0.UIMenu> </Collapsible></li>
                 </ul>
 
                 <CommonComponents.ReturnButton></CommonComponents.ReturnButton>
