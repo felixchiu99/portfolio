@@ -12,12 +12,13 @@ export default function Component() {
                 UI Menu Prototype
             </h4>
             <h5 class="description">Status: <Status.Ongoing></Status.Ongoing></h5>
-
+            <h5>Last update : 2024-04-10</h5>
 
             <div class="row">
                 <div class="column">
                     <p class="description">
                         A experiment with UE5's UI system, with the minimum goal was to start, exit, and change some systems in-game.
+                        Currently planning on learning about blueprint UI first, then take a deeper look on SlateUI for more complex application.
                     </p>
                     <p class="description">
                         Will also experiment with setting saving as well.

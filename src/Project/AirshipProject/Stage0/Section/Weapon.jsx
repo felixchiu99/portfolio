@@ -12,6 +12,7 @@ export default function Component() {
                 Weapon Prototype
             </h4>
             <h5 class="description">Status: <Status.Completed></Status.Completed> </h5>
+            <h5>Last update : 2024-03-19</h5>
 
 
             <div class="row">

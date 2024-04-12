@@ -12,7 +12,7 @@ export default function Component() {
                 Airship Prototype
             </h4>
             <h5 class="description">Status: <Status.Completed></Status.Completed></h5>
-
+            <h5>Last update : 2024-04-10</h5>
 
             <div class="row">
                 <div class="column">
