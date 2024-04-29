@@ -11,10 +11,10 @@ function Airship() {
         <div className="App">
             
             <header className="Project">
-                <h3>Airship Project: Stage 1</h3>
-                <h4 class="description">
+                <h2>Airship Project: Stage 1</h2>
+                <h3 class="description">
                     Status: <Status.Planning></Status.Planning>
-                </h4>
+                </h3>
                 <Section.Introduction></Section.Introduction>
 
                 

@@ -11,7 +11,7 @@ function Airship() {
         <div className="App">
             
             <header className="Project">
-                <h3>Airship Project</h3>
+                <h2>Airship Project</h2>
                 <Section.Introduction></Section.Introduction>
                 <header className="Project">
                     <div class="description" style={{ "padding-left": "0%", "padding-right": "6%" }}>
