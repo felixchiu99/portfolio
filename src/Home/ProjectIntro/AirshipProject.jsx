@@ -48,8 +48,8 @@ export default function Project() {
                     <div class="round" style={{ background: "white", color: "black" }}>
                         <h4>Latest Clips</h4>
                         <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                            <YoutubeEmbed embedId="GmV63ISOkik" />
-                            <p>The Second Prototype Gameplay System (Airship Prototype) for the Airship Project.</p>
+                            <YoutubeEmbed embedId="2qe7Eczwhlo" />
+                            <p>The Third Prototype System (UIs and Menus Prototype) for the Airship Project.</p>
                         </div>
                         <div>
                             <a href="https://github.com/felixchiu99/AeroKingdom_Airships">

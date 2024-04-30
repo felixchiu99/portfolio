@@ -31,7 +31,12 @@ function Airship() {
 
                 <h4 class="description">Planned</h4>
                 <ul class="description">
-                    <li><Collapsible title="Airship Movement Rewrite (Planned)"> <Stage0.AirshipMovementRewrite></Stage0.AirshipMovementRewrite> </Collapsible></li>
+                    {/* 
+                        <li><Collapsible title="Airship Movement Rewrite (Planned)"> <Stage0.AirshipMovementRewrite></Stage0.AirshipMovementRewrite> </Collapsible></li>
+                    */}
+                    {/* 
+                        <li><Collapsible title="Airship Movement Rewrite (Planned)"> <Stage0.AirshipMovementRewrite></Stage0.AirshipMovementRewrite> </Collapsible></li>
+                    */}
                 </ul>
 
                 <CommonComponents.ReturnButton></CommonComponents.ReturnButton>

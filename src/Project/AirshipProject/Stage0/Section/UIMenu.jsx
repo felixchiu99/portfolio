@@ -11,7 +11,7 @@ export default function Component() {
             <h4 class="description" style={{ "padding-left": "0%", "padding-right": "6%" }}>
                 UI Menu Prototype
             </h4>
-            <h5 class="description">Status: <Status.Ongoing></Status.Ongoing></h5>
+            <h5 class="description">Status: <Status.Completed></Status.Completed></h5>
             <h5>Last update : 2024-04-29</h5>
 
             <div class="row">
@@ -20,7 +20,7 @@ export default function Component() {
                         A experiment with UE5's UI system, with the minimum goal was to start, exit, and change some systems in-game.
                         During this, I have experiemented with creating UIs using pure blueprint, SlateUI and Blueprints with c++ via bind widgets.
                     </p>
-                    <Collapsible title="My Learning journey">
+                    <Collapsible title="My UI Learning journey">
                         <p class="description">
                             I first started to experiement on UI creation by following some tutorial relying on blueprints.
                             Creating UI with blueprints is great for layout, but for a programmer, it is painful to create all functionality in blueprints.
@@ -32,21 +32,31 @@ export default function Component() {
                             I have difficulty understanding how I should format / layout using Slate. So I decided to put this down for now and find a different tutorial.
                         </p>
                         <p class="description">
-                            I finally found the amazing series from [] about creating UIs.
+                            I finally found the amazing tutorial from benui about creating UIs in C++ (Kind of).
+                            In that tutorial, the writer pointed out the for ease of coding,
+                            it might be better to let c++ code handle the logic and functionality of a menu,
+                            while leaving the layout to blueprints.
+                            To ensure that the blueprint will have required widgets,
+                            we can use the bind widget UFUNCTION to stop user widget blueprints with incomplete widgets from being saved.
+                            We can then access the widgets for their functionality accordingly.
+                        </p>
+                        <p class="description">
+                            With the learning phase finished, I moved on to implementing the respective menus/uis.
                         </p>
                     </Collapsible>
                     <br></br>
-                    <ul class="description">
+                    <Collapsible title="Details / Implementation List: "> 
+                        <ul class="description">
                         <li>
                             <Collapsible title="Main Menu">
                                 <p>
                                     The Main Menu has the following button.
                                     <ul class="description">
                                         <li>
-                                            Level Select : For choosing a scene to load.
+                                            Level Select : Navigate to Level select menu.
                                         </li>
                                         <li>
-                                            Settings : For Changing the settings.
+                                            Settings :  Navigate to Settings menu.
                                         </li>
                                         <li>
                                             Quit : For Quiting the game.
@@ -54,13 +64,27 @@ export default function Component() {
                                     </ul>
                                 </p>
                                 <p>
-                                    The level Select should show all related prototype for stage 0.
-                                    Which can be changed later on in stage 1.
+                                    
                                 </p>
                                 <p>
                                     Note: The settings currently can set the SFX volume.
                                     However, as I have not created a "save" function for game settings,
                                     so the settings will not persist over restarting the game.
+                                </p>
+                            </Collapsible>
+                        </li>
+                        <li>
+                            <Collapsible title="Level select Menu">
+                                <p>
+                                    The Level select Menu is a simple menu page where players can load the created test prototypes.   
+                                </p>
+                                <p>
+                                    The level Select should show all related prototype for stage 0.
+                                    Which can be changed later on in stage 1.
+                                </p>
+                                <p>
+                                    Note: While I have created a working example for a level loader that auto-populate the level button from a directory,
+                                    I did have trouble initialising the level buttons on spawn. This will be revisited in later test.
                                 </p>
                             </Collapsible>
                         </li>
@@ -167,9 +191,24 @@ export default function Component() {
                             </Collapsible>
                         </li>
                     </ul>
-                    
-                    <h5 class="description">Resources:</h5>
-                    <p class="description"> </p>
+                    </Collapsible>
+                    <br></br>
+                    <Collapsible title="Resources :">
+                        <ul class="description">
+                            <li>
+                                Slate UI Tutorial: https://www.youtube.com/watch?v=jeK6DPB5weA
+                            </li>
+                            <li>
+                                Slate Related Compendium: https://github.com/YawLighthouse/UMG-Slate-Compendium?tab=readme-ov-file
+                            </li>
+                            <li>
+                                _benui's C++ an UMG Tutorial: https://www.youtube.com/watch?v=bWoew0fa_xA&list=PLuImZDDWrW_Ou7rxkpMUIhfYjqEaiKTT6&index=1
+                            </li>
+                            <li>
+                                _benui's Webpage: https://benui.ca/
+                            </li>
+                        </ul>
+                    </Collapsible>
                 </div>
                 <div class="column">
                     <div class="round">
@@ -180,7 +219,7 @@ export default function Component() {
                                     <p style={{ "text-align": "center", color: 'white' }}>Showcase of the current Menus</p>
                                 </div>
                                 <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                                    <YoutubeEmbed embedId="nGKzXMNkUQ0" />
+                                    <YoutubeEmbed embedId="2qe7Eczwhlo" />
                                     <p style={{ "text-align": "center", color: 'white' }}>Showcase of the Tooltip widget</p>
                                 </div>
                             </div>
