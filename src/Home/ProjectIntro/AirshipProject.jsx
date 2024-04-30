@@ -8,7 +8,7 @@ export default function Project() {
         <header className="Project">
             <h3>Airship Project</h3>
             <h4>Status: <Status.Ongoing></Status.Ongoing></h4>
-            <h5>Last update : 2024-04-10</h5>
+            <h5>Last update : 2024-04-30</h5>
             <div class="row">
                 <div class="column">
                     <div class="round">
