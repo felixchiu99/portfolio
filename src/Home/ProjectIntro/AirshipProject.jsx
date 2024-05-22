@@ -8,7 +8,7 @@ export default function Project() {
         <header className="Project">
             <h3>Airship Project</h3>
             <h4>Status: <Status.Ongoing></Status.Ongoing></h4>
-            <h5>Last update : 2024-04-30</h5>
+            <h5>Last update : 2024-05-22</h5>
             <div class="row">
                 <div class="column">
                     <div class="round">
@@ -17,7 +17,7 @@ export default function Project() {
                                 Game Engine: Unreal Engine 5
                             </h4>
                             <h5 class="description">
-                                Current Focus: UI
+                                Current Focus: AI
                             </h5>
                             <p class="description">
                                 I have always wanted to make a Airship based game in the past.
@@ -48,8 +48,8 @@ export default function Project() {
                     <div class="round" style={{ background: "white", color: "black" }}>
                         <h4>Latest Clips</h4>
                         <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                            <YoutubeEmbed embedId="2qe7Eczwhlo" />
-                            <p>The Third Prototype System (UIs and Menus Prototype) for the Airship Project.</p>
+                            <YoutubeEmbed embedId="Lbz8k-rxJac" />
+                            <p>A Sneakpeak to the Weapons AI System I have created.</p>
                         </div>
                         <div>
                             <a href="https://github.com/felixchiu99/AeroKingdom_Airships">

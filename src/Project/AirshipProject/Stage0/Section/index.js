@@ -4,3 +4,4 @@ export { default as Airship } from './Airship';
 export { default as UIMenu } from './UIMenu';
 export { default as AIExperiment } from './AIExperiment';
 export { default as AirshipMovementRewrite } from './AirshipMovementRewrite';
+export { default as PlayableOffshoot } from './PlayableOffshoot';

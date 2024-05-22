@@ -12,7 +12,7 @@ export default function Component() {
                 AI Experiments
             </h4>
             <h5 class="description">Status: <Status.Ongoing></Status.Ongoing></h5>
-            <h5>Last update : 2024-04-30</h5>
+            <h5>Last update : 2024-05-22</h5>
 
             <div class="row">
                 <div class="column">
@@ -42,7 +42,8 @@ export default function Component() {
                     <Collapsible title="Details / To Do List: ">  
                         <ul class="description">
                             <li>
-                                <Collapsible title="Roaming AI">                             
+                                <Collapsible title="Roaming AI (Explored)">   
+                                    <h4>Vision: </h4>
                                     <p>
                                         NPC should be able to roam around on islands and on ship. 
                                     </p>
@@ -53,10 +54,19 @@ export default function Component() {
                                         Each NPC will then query the POI system for fulfilling a specific need. On getting the related location, if it has a different "AI",
                                         then the NPC will fake doing action while the actual AI handles actually doing it.
                                     </p>
+
+                                    <h5>Current Experiments/Prototypes </h5>
+                                    <p>
+                                        After following Ryan Laley's AI Tutorial, I have a brief understanding of UE5's Wonderfull AI system.
+                                        With Smart objects, EQS system and AI senses, I can see how customisable and easy setting up simple, convincing NPC character can be.
+                                        I have currently left the NPCs as is, so that more work can be done with the Weapon and Airship Ai.
+                                    </p>
+
                                 </Collapsible>
                             </li>
                             <li>
-                                <Collapsible title="Weapon AI">                             
+                                <Collapsible title="Turret AI (Explored)">          
+                                    <h4>Vision: </h4>
                                     <p>
                                         The Weapon AI would be an AI that when given a target, it will rotate a turret to face that target, and will fire once it is "On target".
                                     </p>
@@ -64,10 +74,50 @@ export default function Component() {
                                         If there is a fire director, the targeting will come from the fire director.
                                         However, the individual turrets would still have a targeting system which would not be as sensitive as the fire director.
                                     </p>
+
+                                    <h5>Current Experiments/Prototypes </h5>
+                                    <p>
+                                        I have developed a simple Aiming AI for the Turret. The Current Method works well for stationary targets but needs better moving target tweaks.
+                                    </p>
+                                    <p class="description">
+                                        The current Aim AI follows the logic below:
+                                        <ol class="description">
+                                            <li>
+                                                Check if there is a fire director (Currently always false)
+                                            </li>
+                                            <li>
+                                                <p>If there is no fire director, then If there is has a target and is not Aimed correctly, </p>
+                                                then Rotate the turret Azimuth first, Then Elevation
+                                            </li>
+                                            <li>
+                                                <p>If there is has a target and both azimuth and Elevation is Aimed correctly, </p>
+                                                then Fire cannon.
+                                            </li>
+                                        </ol>
+                                    </p>
+                                    <p class="description">
+                                        The current Find Target AI follows the logic below:
+                                        <ol class="description">
+                                            <li>
+                                                If there is a Targetable object within range, Add it to a "known target list".
+                                            </li>
+                                            <li>
+                                                Each second, the turret sorts the target by assigning scores to each target in a Map. (If a Target is Destroyed, it will be deleted from the map.)
+                                                <p> (Score is based on distance, existing target, and turret limits. With favourable factor like closer distance being awarded more points and deduction for out of bounds targets)</p>
+                                            </li>
+                                            <li>
+                                                The Target with the largest score is chosen to be the Aim target.
+                                            </li>
+                                            <li>
+                                                Each 0.1 second, if the target is set, then it's location is stored in a FVector which the Aim Ai will use to calculate the Aim.
+                                            </li>
+                                        </ol>
+                                    </p>
+
                                 </Collapsible>
                             </li>
                             <li>
-                                <Collapsible title="Ship AI">                             
+                                <Collapsible title="Ship AI (Ongoing)">                             
                                     <p>
                                         The ship AI should have the ability to navigate to waypoints automatically.
                                         For now, I thought the best way to do it is to let the AI spawn waypoints that points towards the destination. 
@@ -91,6 +141,9 @@ export default function Component() {
                                 <p class="description">
                                     Ryan Laley's AI tutorial: https://www.youtube.com/watch?v=IDZh0epFTRY&list=PL4G2bSPE_8uklDwraUCMKHRk2ZiW29R6e
                                 </p>
+                                <p class="description">
+                                    Wikipedia Projectile Motion: https://en.wikipedia.org/wiki/Projectile_motion#Angle_%CE%B8_required_to_hit_coordinate_(x,_y)
+                                </p>
                             </li>
 
                         </ul>
@@ -101,7 +154,30 @@ export default function Component() {
                     <div class="round">
                         <div class="round_video" style={{ background: "gray", color: "black", width: "75%", float: "Right" }}>
                             <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                                <p style={{ "text-align": "center", color: 'white' }}>Nothing to Show yet...</p>
+                                <YoutubeEmbed embedId="Lbz8k-rxJac" />
+                                <p style={{ "text-align": "center", color: 'white' }}>A first look at the Turret AI</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="round">
+                        <div class="round_video" style={{ background: "gray", color: "black", width: "75%", float: "Right" }}>
+                            <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
+                                <YoutubeEmbed embedId="nhVLTipaa5s" />
+                                <p style={{ "text-align": "center", color: 'white' }}>
+                                    (NPCs) The result of following Ryan Laley's AI tutorial
+                                    <ol class="description">
+                                        <li>
+                                            Blue: smart object user (chair)
+                                        </li>
+
+                                        <li>
+                                            Silver: patrol with sound interruption
+                                        </li>
+                                        <li>
+                                            Red: Cover finding hide from player (Quite buggy)
+                                        </li>
+                                    </ol>
+                                </p>
                             </div>
                         </div>
                     </div>

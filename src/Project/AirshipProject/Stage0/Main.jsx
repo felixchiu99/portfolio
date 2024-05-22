@@ -37,6 +37,9 @@ function Airship() {
                     {/* 
                         <li><Collapsible title="Airship Movement Rewrite (Planned)"> <Stage0.AirshipMovementRewrite></Stage0.AirshipMovementRewrite> </Collapsible></li>
                     */}
+                    {/*
+                        <li><Collapsible title="Playable Offshoot (Planned)"> <Stage0.PlayableOffshoot></Stage0.PlayableOffshoot> </Collapsible></li>
+                    */}
                 </ul>
 
                 <CommonComponents.ReturnButton></CommonComponents.ReturnButton>
