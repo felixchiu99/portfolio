@@ -12,6 +12,8 @@ import AirshipStage1 from './Project/AirshipProject/Stage1/Main';
 import AirshipStage2 from './Project/AirshipProject/Stage2/Main';
 import AirshipStage3 from './Project/AirshipProject/Stage3/Main';
 
+import InteriorDeco from './Project/InteriorDeco/Main';
+
 function App() {
     return (
         <div className="App">
@@ -35,6 +37,8 @@ function App() {
                 <Route path="/AirshipProject/Stage2" element={<AirshipStage2 />} >
                 </Route>
                 <Route path="/AirshipProject/Stage3" element={<AirshipStage3 />} >
+                </Route>
+                <Route path="/InterDeco" element={<InteriorDeco />} >
                 </Route>
             </Routes>
         </div>

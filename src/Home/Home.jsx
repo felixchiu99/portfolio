@@ -21,6 +21,8 @@ function Home() {
                 </header>
             </header>
 
+            <Projects.InteriorDeco></Projects.InteriorDeco>
+
             <Projects.AirshipProject></Projects.AirshipProject>
 
             <Projects.StuBrew></Projects.StuBrew>
