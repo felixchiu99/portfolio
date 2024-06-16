@@ -9,7 +9,7 @@ export default function Component() {
             <div className="App">
             
                 <header className="Project">
-                    <h2>InteriorDecoV1</h2>
+                    <h2>InteriorDeco V0.1.0</h2>
                     <h5 class="description">Updated : 2024-06-06</h5>
                     <h4 class="description">
                         Background:
