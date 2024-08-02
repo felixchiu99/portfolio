@@ -1,7 +1,7 @@
-import './Project.css';
+import '../Project.css';
 import React from 'react';
-import YoutubeEmbed from "../YoutubeEmbed";
-import Collapsible from "../Collapsible";
+import YoutubeEmbed from "../../YoutubeEmbed";
+import Collapsible from "../../Collapsible";
 
 function CSC8508() {
     return (

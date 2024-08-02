@@ -1,6 +1,6 @@
-import './Project.css';
+import '../Project.css';
 import React from 'react';
-import YoutubeEmbed from "../YoutubeEmbed";
+import YoutubeEmbed from "../../YoutubeEmbed";
 
 function ArcheryVR() {
     return (

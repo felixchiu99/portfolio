@@ -1,12 +1,15 @@
 import '../Project.css';
-import React from 'react';
+import React, { useState } from "react";
 import YoutubeEmbed from "../../YoutubeEmbed";
 import Collapsible from "../../Collapsible";
 import * as Status from '../../ProjectStatus';
 import * as CommonComponents from "../CommonComponents"
 import * as Section from "./Section"
+import Tag from "./tag"
+import TagDisplay from "../CommonComponents/TagDisplay"
 
 function Airship() {
+    const [tags, setItem] = useState(Tag);
     return (
         <div className="App">
             
@@ -33,6 +36,7 @@ function Airship() {
                         </a>
                      
                     </div>
+                    <TagDisplay tagNames={tags}></TagDisplay>
                 </header>
                 <CommonComponents.ReturnButton></CommonComponents.ReturnButton>
             </header>

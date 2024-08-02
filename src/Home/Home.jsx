@@ -1,7 +1,7 @@
 import '../App.css';
 import React from 'react';
 import Collapsible from "../Collapsible";
-import * as Projects from "./ProjectIntro";
+import * as Intro from "../Project/index";
 
 function Home() {
     return (
@@ -21,20 +21,20 @@ function Home() {
                 </header>
             </header>
 
-            <Projects.InteriorDeco></Projects.InteriorDeco>
+            <Intro.InteriorDeco></Intro.InteriorDeco>
 
-            <Projects.AirshipProject></Projects.AirshipProject>
+            <Intro.AirshipProject></Intro.AirshipProject>
 
-            <Projects.StuBrew></Projects.StuBrew>
+            <Intro.StuBrew></Intro.StuBrew>
 
-            <Projects.InkHell></Projects.InkHell>
+            <Intro.InkHell></Intro.InkHell>
 
-            <Projects.VRArchery></Projects.VRArchery>
+            <Intro.ArcheryVR></Intro.ArcheryVR>
 
             <div className="ProjectAlt">
                 <Collapsible title="Older Works">
-                    <Projects.CSC8503></Projects.CSC8503>
-                    <Projects.CSC8502></Projects.CSC8502>
+                    <Intro.CSC8503></Intro.CSC8503>
+                    <Intro.CSC8502></Intro.CSC8502>
                 </Collapsible>
             </div>
         </div>

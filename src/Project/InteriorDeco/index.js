@@ -1,0 +1,1 @@
+export { default as InteriorDeco } from './IntroPage/Intro';

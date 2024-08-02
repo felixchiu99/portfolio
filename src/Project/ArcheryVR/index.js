@@ -1,0 +1,1 @@
+export { default as ArcheryVR } from './IntroPage/Intro';

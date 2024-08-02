@@ -1,7 +1,7 @@
-import '../../App.css';
+import '../../../App.css';
 import React from 'react';
-import YoutubeEmbed from "../../YoutubeEmbed";
-import * as Status from '../../ProjectStatus';
+import YoutubeEmbed from "../../../YoutubeEmbed";
+import * as Status from '../../../ProjectStatus';
 
 export default function Project() {
     return (

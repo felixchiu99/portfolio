@@ -1,26 +1,26 @@
-import './Project.css';
+import '../Project.css';
 import React from 'react';
-import YoutubeEmbed from "../YoutubeEmbed";
-import Collapsible from "../Collapsible";
+import YoutubeEmbed from "../../YoutubeEmbed";
+import Collapsible from "../../Collapsible";
 
-import StuBrew_Brewery from '../images/StuBrew_Brewery.png'
-import StuBrew_Stall from '../images/StuBrew_Stall.png'
+import StuBrew_Brewery from './images/StuBrew_Brewery.png'
+import StuBrew_Stall from './images/StuBrew_Stall.png'
 
-import StuBrew_Stall_serving from '../images/StuBrew_Stall_serving.png'
+import StuBrew_Stall_serving from './images/StuBrew_Stall_serving.png'
 
-import StuBrew_Grab1 from '../images/Grab_1.png'
-import StuBrew_Grab2 from '../images/Grab_2.jpg'
-import StuBrew_Grab3 from '../images/Grab_3.jpg'
+import StuBrew_Grab1 from './images/Grab_1.png'
+import StuBrew_Grab2 from './images/Grab_2.jpg'
+import StuBrew_Grab3 from './images/Grab_3.jpg'
 
-import UI_1 from '../images/Outline.png'
-import UI_2 from '../images/PC_Pointers.png'
-import UI_3 from '../images/PC_Pointers_2.png'
-import UI_4 from '../images/VR UI.png'
-import UI_5 from '../images/Guidence_1.png'
-import UI_6 from '../images/Guidence_2.png'
+import UI_1 from './images/Outline.png'
+import UI_2 from './images/PC_Pointers.png'
+import UI_3 from './images/PC_Pointers_2.png'
+import UI_4 from './images/VR UI.png'
+import UI_5 from './images/Guidence_1.png'
+import UI_6 from './images/Guidence_2.png'
 
-import StuBrew_Tablet_VR from '../images/StuBrew_Tablet_VR.mp4'
-import StuBrew_Tablet_VR_2 from '../images/StuBrew_Tablet_VR_2.mp4'
+import StuBrew_Tablet_VR from './images/StuBrew_Tablet_VR.mp4'
+import StuBrew_Tablet_VR_2 from './images/StuBrew_Tablet_VR_2.mp4'
 function CSC8599() {
     return (
         <div className="App">

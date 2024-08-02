@@ -1,0 +1,20 @@
+/* CSS */
+
+.tagDisplay {
+    text-align: left;
+}
+
+.tagDiv {
+    display: flex;
+}
+
+.tag {
+    text-align: center;
+    align-items: center;
+    background-color: #9534c2;
+    border-radius: 12%;
+    margin: 0.5%;
+    color: white;
+    padding: 0.3%;
+    alignSelf: baseline;
+}
