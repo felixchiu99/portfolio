@@ -1,6 +1,5 @@
 import '../../../Project.css';
-import YoutubeEmbed from "../../../../YoutubeEmbed";
-import Collapsible from "../../../../Collapsible";
+import * as CommonComp from "../../../../CommonComponents";
 import React from 'react';
 
 export default function Component() {
@@ -23,10 +22,10 @@ export default function Component() {
                     </p>
                     <ul class="description">
                         <li>
-                            <Collapsible title="TBC">
+                            <CommonComp.Collapsible title="TBC">
                                 
                                
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                        
                     </ul>

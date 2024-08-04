@@ -1,7 +1,6 @@
 import '../Project.css';
 import React from 'react';
-import YoutubeEmbed from "../../YoutubeEmbed";
-import Collapsible from "../../Collapsible";
+import * as CommonComp from "../../CommonComponents";
 
 import StuBrew_Brewery from './images/StuBrew_Brewery.png'
 import StuBrew_Stall from './images/StuBrew_Stall.png'
@@ -34,14 +33,14 @@ function CSC8599() {
                             <p>13 weeks (May – Aug 2023)</p>
 
                             <div class="round_video" style={{background:"gray", color: "black", width: "30%", float: "Right"}}>
-                                <YoutubeEmbed embedId="DK0heSvBuV8" />
+                                <CommonComp.YoutubeEmbed embedId="DK0heSvBuV8" />
                                 <h4 style={{color: "white"}}>Extras:</h4>
-                                <Collapsible title="A Uncut VR Gameplay Demo">
-                                    <YoutubeEmbed embedId="aMS2xU2jjCs" />
-                                </Collapsible>
-                                <Collapsible title="A Uncut PC Gameplay Demo">
-                                    <YoutubeEmbed embedId="TEwctvyq4vY" />
-                                </Collapsible>
+                                <CommonComp.Collapsible title="A Uncut VR Gameplay Demo">
+                                    <CommonComp.YoutubeEmbed embedId="aMS2xU2jjCs" />
+                                </CommonComp.Collapsible>
+                                <CommonComp.Collapsible title="A Uncut PC Gameplay Demo">
+                                    <CommonComp.YoutubeEmbed embedId="TEwctvyq4vY" />
+                                </CommonComp.Collapsible>
                             </div>
 
                             <h4>Sumary</h4>
@@ -63,7 +62,7 @@ function CSC8599() {
 
                             <h4 class="clear-float">Achievements: </h4>
                             <div>
-                                <Collapsible title="•	Two complete Scene">
+                                <CommonComp.Collapsible title="•	Two complete Scene">
                                     <div> 
                                         <div class="round_video" style={{background:"gray", color: "black", width: "25%", float: "Right"}}>
                                             <img src={StuBrew_Brewery} style={{width: "100%"}} alt="The Brewery"></img>
@@ -85,9 +84,9 @@ function CSC8599() {
                                             The player can then transfer to the stall scene where they can “sell” their brew to NPC for a profit.
                                         </p>
                                     </div>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
 
-                                <Collapsible title="•	PC compatiablity">
+                                <CommonComp.Collapsible title="•	PC compatiablity">
                                     <div> 
                                         <p>Mouse and keyboard controller</p>
 
@@ -145,30 +144,30 @@ function CSC8599() {
                                             <p style={{"text-align": "center", color: 'white'}}>Interaction examples:</p>
                                             <div style={{width: "50%", float: "Left"}}>
                                                 <div style={{width: "49%", "padding-right": "1%", float: "Left"}}>
-                                                    <YoutubeEmbed embedId="kRvrhW-CDak" />
+                                                    <CommonComp.YoutubeEmbed embedId="kRvrhW-CDak" />
                                                     <p style={{"text-align": "center", color: 'white'}}>Item pickup</p>
                                                 </div>
                                                 <div style={{width: "49%", float: "Right", "padding-right": "1%"}}>
-                                                    <YoutubeEmbed embedId="kjdVFiSXM0w" />
+                                                    <CommonComp.YoutubeEmbed embedId="kjdVFiSXM0w" />
                                                     <p style={{"text-align": "center", color: 'white'}}>Dials and Switches</p>
                                                 </div>
                                             </div>
                                             <div style={{width: "50%", float: "Right"}}>
                                                 <div style={{width: "49%", "padding-right": "1%", float: "Left"}}>
-                                                    <YoutubeEmbed embedId="b4WopA1Fgu8" />
+                                                    <CommonComp.YoutubeEmbed embedId="b4WopA1Fgu8" />
                                                     <p style={{"text-align": "center", color: 'white'}}>Buttons (w/sound)</p>
                                                 </div>
                                                 <div style={{width: "49%", float: "Right", "padding-right": "1%"}}>
-                                                    <YoutubeEmbed embedId="n-dGd0zhiP8" />
+                                                    <CommonComp.YoutubeEmbed embedId="n-dGd0zhiP8" />
                                                     <p style={{"text-align": "center", color: 'white'}}>Beer Pump</p>
                                                 </div>
                                             </div>
                                         </div>
 
                                     </div>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
 
-                                <Collapsible title="•	A tablet (touch) style UI for VR">
+                                <CommonComp.Collapsible title="•	A tablet (touch) style UI for VR">
                                     <div> 
                                         <h4 class="clear-float">Initial thoughts</h4>
                                         <p>
@@ -223,13 +222,13 @@ function CSC8599() {
                                             These are some of the problems that I need to solve in the future.
                                         </p>
                                     </div>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
 
-                                <Collapsible title="•	Screen-fading for scene change">
+                                <CommonComp.Collapsible title="•	Screen-fading for scene change">
                                     <div> 
                                         <h4 class="clear-float">Experimenting with the PC version</h4>
                                         <div class="round_video" style={{background:"gray", color: "black", width: "25%", float: "Right"}}>
-                                            <YoutubeEmbed embedId="ABWMa-nrrBw" />
+                                            <CommonComp.YoutubeEmbed embedId="ABWMa-nrrBw" />
                                             <p style={{"text-align": "center", color: 'white'}}>PC version</p>
                                         </div>
 
@@ -247,7 +246,7 @@ function CSC8599() {
                                         <h4 class="clear-float">Problem with VR</h4>
 
                                         <div class="round_video" style={{background:"gray", color: "black", width: "25%", float: "Right"}}>
-                                            <YoutubeEmbed embedId="bpLwfFClJ1M" />
+                                            <CommonComp.YoutubeEmbed embedId="bpLwfFClJ1M" />
                                             <p style={{"text-align": "center", color: 'white'}}>VR version</p>
                                         </div>
 
@@ -274,14 +273,14 @@ function CSC8599() {
                                         <h4 class="clear-float">Aesthetics</h4>
                                         <p>A door type trigger is then added so that the scene change can be triggered in a more immersed fashion.</p>
                                     </div>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                                 
-                                <Collapsible title="•	Functional save game">
+                                <CommonComp.Collapsible title="•	Functional save game">
                                     <div> 
                                         <h4 class="clear-float">Save System</h4>
 
                                         <div class="round_video" style={{background:"gray", color: "black", width: "25%", float: "Right"}}>
-                                            <YoutubeEmbed embedId="2f_rVQ0Vlnc" />
+                                            <CommonComp.YoutubeEmbed embedId="2f_rVQ0Vlnc" />
                                             <p style={{"text-align": "center", color: 'white'}}>A example of save/load system</p>
                                         </div>
 
@@ -373,12 +372,12 @@ function CSC8599() {
 
                                         </p>
                                     </div>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                             </div>
 
                             <h4>Room for improvements: </h4>
                             <div>
-                                <Collapsible title="•	Extending the gameplay loop">
+                                <CommonComp.Collapsible title="•	Extending the gameplay loop">
                                     <div>
                                         <div class="round_video" style={{background:"gray", color: "black", width: "25%", float: "Right"}}>
                                             <img src={StuBrew_Stall_serving} style={{width: "100%"}} alt="Beer selling minigame: An attempt at diversifing gameplay to maintain interest."></img>
@@ -416,9 +415,9 @@ function CSC8599() {
                                            If I would put more time in this project in the future, this would be the first part I'd start.
                                         </p>
                                     </div>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
 
-                                <Collapsible title="•	Overhauling item system">
+                                <CommonComp.Collapsible title="•	Overhauling item system">
                                     <div>
                                         <div class="round_video" style={{background:"gray", color: "black", width: "25%", float: "Right"}}>
                                             <img src={StuBrew_Grab1} style={{width: "50%"}} alt="Player Grabbing a can of malt"></img>
@@ -451,9 +450,9 @@ function CSC8599() {
 
                                         </p>
                                     </div>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
 
-                                <Collapsible title="•	An intuitive tutorial">
+                                <CommonComp.Collapsible title="•	An intuitive tutorial">
                                     <div>
                                         <div class="round_video" style={{background:"gray", color: "black", width: "30%", float: "Right"}}>
                                             <h5 style={{color: 'white'}}>Outlines:</h5>
@@ -513,7 +512,7 @@ function CSC8599() {
                                             Anyways, this remains to be an aspect to be experimented on in future projects.
                                         </p>
                                     </div>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                             </div>
 
                             <h4 class="clear-float">Final thoughts: </h4>

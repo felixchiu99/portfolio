@@ -1,5 +1,5 @@
 import '../../../Project.css';
-import Collapsible from "../../../../Collapsible";
+import * as CommonComp from "../../../../CommonComponents";
 import React from 'react';
 
 export default function Component() {
@@ -13,7 +13,7 @@ export default function Component() {
             </p>
             <ul class="description">
                 <li>
-                    <Collapsible title="General Environment">
+                    <CommonComp.Collapsible title="General Environment">
                         <p>
                             The world consist of some floating islands.
                         </p>
@@ -27,20 +27,20 @@ export default function Component() {
                         <p>
                             Some "islands" are actually mountain tops and can sustain ore mining.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="The map/world layout">
+                    <CommonComp.Collapsible title="The map/world layout">
                         <p>
                             The world should have floating islands in the sky with regions that are dense with local islands,
                             and a relatively sparse space between each region.
                         </p>
                         
 
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Economy">
+                    <CommonComp.Collapsible title="Economy">
                         <p>
                             With limited space, each island usually specialise in one trade.
                         </p>
@@ -54,10 +54,10 @@ export default function Component() {
                         <p>
                             With specialisation comes specific demands and thus overtime, each island will have different needs to be fulfilled.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Technology">
+                    <CommonComp.Collapsible title="Technology">
                         <p>
                             As the main transport are airships, Cannons are a common technology in the world for self defence.
                         </p>
@@ -71,10 +71,10 @@ export default function Component() {
                             and the most complex / expensive contraptions fulfilled by power gem tech.
                         </p>
 
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Power Gem?">
+                    <CommonComp.Collapsible title="Power Gem?">
                         <p>(Idea Needs refining)</p>
                         <p>
                             A special gem is obtained through "dungeon diving" where adventurers.
@@ -85,7 +85,7 @@ export default function Component() {
                             there is a reluctance to use it directly as a weapon/power source
                             and is usually reserved for complex systems.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
             </ul>
 

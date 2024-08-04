@@ -5,13 +5,21 @@ const AllTags = [
     "Unreal Engine",
     "Unity",
     "Godot",
+    "Blueprint",
+    "C++",
+    "C#",
+    "Graphic",
+    "Physics",
     "Gameplay",
     "UI/UX",
     "AI",
+    "Networking",
     "3D Modelling",
     "VR",
     "DevOps",
     "Modding",
+    "Experiment",
+    "Group Project",
     "Others"
 ]
 export default AllTags;

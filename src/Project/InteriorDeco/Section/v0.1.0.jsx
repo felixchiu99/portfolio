@@ -1,6 +1,5 @@
 import '../../Project.css';
-import Collapsible from "../../../Collapsible";
-import YoutubeEmbed from "../../../YoutubeEmbed";
+import * as CommonComp from "../../../CommonComponents";
 import React from 'react';
 
 export default function Component() {
@@ -26,7 +25,7 @@ export default function Component() {
                         <div class="round" style={{ background: "white", color: "black" }}>
                             <h4>Version 0.1.0 (Minimum Delivery)</h4>
                             <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                                <YoutubeEmbed embedId="bdKNY9oh43s" />
+                                <CommonComp.YoutubeEmbed embedId="bdKNY9oh43s" />
                                 <p>The version 1 of this project</p>
                             </div>
                             <div>
@@ -53,7 +52,7 @@ export default function Component() {
                         <li>Product is redistributable</li>
                     </ul>
                     <div class="description">
-                        <Collapsible title="Implementation">
+                        <CommonComp.Collapsible title="Implementation">
                             <h5>
                                 Scale accurate room
                             </h5>
@@ -78,7 +77,7 @@ export default function Component() {
                                 If the preview placement is clipping another object, then the preview will change to a red-ish colour.
                                 If the preview placement is valid, then clicking the left mouse button will spawn a new cube with the specified scale.
                             </p>
-                        </Collapsible>
+                        </CommonComp.Collapsible>
                     </div>
                     <h4 class="description">
                         Result:

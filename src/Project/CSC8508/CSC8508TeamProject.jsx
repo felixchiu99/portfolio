@@ -1,7 +1,6 @@
 import '../Project.css';
 import React from 'react';
-import YoutubeEmbed from "../../YoutubeEmbed";
-import Collapsible from "../../Collapsible";
+import * as CommonComp from "../../CommonComponents";
 
 function CSC8508() {
     return (
@@ -14,8 +13,8 @@ function CSC8508() {
                         <div class="round">
                             <div class="round" style={{background:"white", color: "black", width: "40%", float: "Right", margin: "3%", "left-margin": "6%"}}>
                                 <h4>Ink Hell</h4>
-                                <YoutubeEmbed embedId="TUJYlqpcz34" />
-                                <YoutubeEmbed embedId="OOixs-0MfTs" />
+                                <CommonComp.YoutubeEmbed embedId="TUJYlqpcz34" />
+                                <CommonComp.YoutubeEmbed embedId="OOixs-0MfTs" />
                                 <p class="description">
                                     Can you dodge your way to success?
                                 </p>
@@ -39,7 +38,7 @@ function CSC8508() {
 
                             <h4>Personal Contributions</h4>
                             <div>
-                                <Collapsible title="•	Networked Multiplayer">
+                                <CommonComp.Collapsible title="•	Networked Multiplayer">
                                     <div style={{ "padding-left": "1%" }}> 
                                         <h5>Method</h5>
                                         <p>
@@ -108,9 +107,9 @@ function CSC8508() {
                                             <li>Extending this system would be hard as there are too many special cases.</li>
                                         </ul>
                                     </div>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
 
-                                <Collapsible title="•	Player controller">
+                                <CommonComp.Collapsible title="•	Player controller">
                                     <div style={{ "padding-left": "1%" }}> 
                                         <h5>Method</h5>
                                         <p>
@@ -134,9 +133,9 @@ function CSC8508() {
                                         </p>
                                     </div> 
                                     
-                                </Collapsible>
+                                </CommonComp.Collapsible>
 
-                                <Collapsible title="•	Base for graphical menu">
+                                <CommonComp.Collapsible title="•	Base for graphical menu">
                                     <div style={{ "padding-left": "1%" }}> 
                                         <h5>Method</h5>
                                         <p>
@@ -156,9 +155,9 @@ function CSC8508() {
                                         </p>
                                     </div>
                                     
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                                 
-                                <Collapsible title="•	Modified health/damage system">
+                                <CommonComp.Collapsible title="•	Modified health/damage system">
                                     <div style={{ "padding-left": "1%" }}> 
                                         <p>
                                             While the visuals of the ink spray wasn't created by me, how it affect other objects in game was.
@@ -183,9 +182,9 @@ function CSC8508() {
                                         </p>
                                     </div>
                                     
-                                </Collapsible>
+                                </CommonComp.Collapsible>
 
-                                <Collapsible title="•	General bugfixes">
+                                <CommonComp.Collapsible title="•	General bugfixes">
                                     <div style={{ "padding-left": "1%" }}> 
                                         <p>
                                             I helped out on fixing several bugs involving merges and new functions. 
@@ -197,7 +196,7 @@ function CSC8508() {
                                         </p>
                                     </div>
                                     
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                             </div>
 
                             <h4>Made using: </h4>

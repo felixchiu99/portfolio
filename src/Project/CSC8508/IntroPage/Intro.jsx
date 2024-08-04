@@ -1,7 +1,8 @@
 import '../../../App.css';
 import React from 'react';
-import YoutubeEmbed from "../../../YoutubeEmbed";
+import * as CommonComp from "../../../CommonComponents";
 import * as Status from '../../../ProjectStatus';
+import Info from "../Info"
 
 export default function Project() {
     return (
@@ -11,6 +12,7 @@ export default function Project() {
             <div class="row">
                 <div class="column">
                     <div class="round">
+                        <CommonComp.InfoDisplay class="description" Info={Info}></CommonComp.InfoDisplay>
                         <h4 class="description">
                             Game Engine: Custom C++ Engine
                         </h4>
@@ -34,7 +36,7 @@ export default function Project() {
                 <div class="column" >
                     <div class="round" style={{ background: "white", color: "black" }}>
                         <h4>Ink Hell</h4>
-                        <YoutubeEmbed embedId="TUJYlqpcz34" />
+                        <CommonComp.YoutubeEmbed embedId="TUJYlqpcz34" />
                         <p class="description">
                             Can you dodge your way to success?
                         </p>

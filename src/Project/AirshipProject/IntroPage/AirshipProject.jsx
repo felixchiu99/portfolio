@@ -1,7 +1,8 @@
 import '../../../App.css';
 import * as Status from '../../../ProjectStatus';
-import React from 'react';
-import YoutubeEmbed from "../../../YoutubeEmbed";
+import React, { useState } from "react";
+import * as CommonComp from "../../../CommonComponents";
+import Info from "../Info"
 
 export default function Project() {
     return (
@@ -13,6 +14,7 @@ export default function Project() {
                 <div class="column">
                     <div class="round">
                         <div>
+                            <CommonComp.InfoDisplay class="description" Info={Info}></CommonComp.InfoDisplay>
                             <h4 class="description">
                                 Game Engine: Unreal Engine 5
                             </h4>
@@ -48,7 +50,7 @@ export default function Project() {
                     <div class="round" style={{ background: "white", color: "black" }}>
                         <h4>Latest Clips</h4>
                         <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                            <YoutubeEmbed embedId="Lbz8k-rxJac" />
+                            <CommonComp.YoutubeEmbed embedId="Lbz8k-rxJac" />
                             <p>A Sneakpeak to the Weapons AI System I have created.</p>
                         </div>
                         <div>

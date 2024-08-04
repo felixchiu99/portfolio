@@ -1,6 +1,5 @@
 import '../../../Project.css';
-import YoutubeEmbed from "../../../../YoutubeEmbed";
-import Collapsible from "../../../../Collapsible";
+import * as CommonComp from "../../../../CommonComponents";
 import React from 'react';
 
 export default function Component() {
@@ -21,7 +20,7 @@ export default function Component() {
                     </p>
                     <ul class="description">
                         <li>
-                            <Collapsible title="Basic Movement">
+                            <CommonComp.Collapsible title="Basic Movement">
                                 <p>
                                     The first priority would be having an Airship-like movement system for the Airship system working.
                                     This will probably be spilt into two parts: The Airship Helm and The airship itself.
@@ -40,10 +39,10 @@ export default function Component() {
                                     I will also only consider a fully balanced airship at first,
                                     but I do want to modify it further down the line so that mass distribution will affect flight characteristics as well.
                                 </p>
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="On board Walkaround">
+                            <CommonComp.Collapsible title="On board Walkaround">
                                 <p>
                                     I imagined that the player should be allowed to walk around on the ship.
                                     However, there are some stories about UE character not doing well natively in moving platforms.
@@ -51,16 +50,16 @@ export default function Component() {
                                 <p>
                                     Will need to test if this is true, and if so, come up with a solution.
                                 </p>
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="Mount / Ship Components">
+                            <CommonComp.Collapsible title="Mount / Ship Components">
                                 <p>
                                     If the character can walk around the ship with ease,
                                     then I will also work on the bases for adding Ship components on the ship.
                                     These will be expanded for future ship customisation systems.
                                 </p>   
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                     </ul>
                     

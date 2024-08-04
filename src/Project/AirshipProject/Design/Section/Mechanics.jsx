@@ -1,5 +1,5 @@
 import '../../../Project.css';
-import Collapsible from "../../../../Collapsible";
+import * as CommonComp from "../../../../CommonComponents";
 import React from 'react';
 
 export default function Component() {
@@ -12,7 +12,7 @@ export default function Component() {
             </p>
             <ul class="description">
                 <li>
-                    <Collapsible title="Airships">
+                    <CommonComp.Collapsible title="Airships">
                         <p>
                             The airship should consist of three core parts, the balloon, the hull and the engines.
                         </p>
@@ -26,10 +26,10 @@ export default function Component() {
                             Ship components will be grouped into weapon mounts and functional mounts,
                             with the functional mounts being use for firing controls, cargo space, fleet command modules and other stuff needed.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Floating Islands">
+                    <CommonComp.Collapsible title="Floating Islands">
                         <p>
                             A Island probably would have a limited upgrade slot for the shops or facilities.
                             It probably would have a small limit on most islands to keep exploration interesting.
@@ -41,18 +41,18 @@ export default function Component() {
                             with larger branch providing banking, quest handling, and other extra functions.
                         </p>
 
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Local/Regional Trade">
+                    <CommonComp.Collapsible title="Local/Regional Trade">
                         <p>
                             I think that each island should have a special demand and produce to make sure the player would have a reason to explore that area.
                             The demand would also spawn meaningful Resupply / Convoy escort quest to the game as there is actually gameplay reason to completing a quest.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Kingdoms">
+                    <CommonComp.Collapsible title="Kingdoms">
                         <p>
                             I would like to simulate a country in this world,
                             with decisions such as expanding/cutting military fleet, investing in infrastructures,
@@ -61,7 +61,7 @@ export default function Component() {
                         <p>
                             I don't want the player to feel overwhelmed so decisions probably happens once 30 mins in game and have less than 10 different decisions in the pool to choose from.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
             </ul>
 

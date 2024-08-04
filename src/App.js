@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import { Route, Routes, Link } from "react-router-dom";
 import Home from './Home/Home';
+import AllProjectHome from './Home/AllProjectHome';
 import ArcheryVR from './Project/ArcheryVR/ArcheryVR';
 import CSC8508 from './Project/CSC8508/CSC8508TeamProject';
 import CSC8599 from './Project/CSC8599/CSC8599StuBrew';
@@ -19,6 +20,8 @@ function App() {
         <div className="App">
             <Routes>
                 <Route path="/" element={<Home />} >
+                </Route>
+                <Route path="/AllProjects" element={<AllProjectHome />} >
                 </Route>
                 <Route path="/CSC8599" element={<CSC8599 />} >
                 </Route>

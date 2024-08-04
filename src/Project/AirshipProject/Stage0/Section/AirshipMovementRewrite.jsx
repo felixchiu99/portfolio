@@ -1,6 +1,5 @@
 import '../../../Project.css';
-import YoutubeEmbed from "../../../../YoutubeEmbed";
-import Collapsible from "../../../../Collapsible";
+import * as CommonComp from "../../../../CommonComponents";
 import * as Status from "../../../../ProjectStatus";
 import React from 'react';
 
@@ -25,19 +24,19 @@ export default function Component() {
                     </p>
                     <ul class="description">
                         <li>
-                            <Collapsible title="Basic Movements">
+                            <CommonComp.Collapsible title="Basic Movements">
                                 <p>
                                     TBC
                                 </p>
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="Collision Simulation">
+                            <CommonComp.Collapsible title="Collision Simulation">
                                 <p>
                                     While a simple collision check is possible, I do think that would not be immersive enough.
                                     A simple "reaction" to the collision should be included as well.
                                 </p>
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                     </ul>
 

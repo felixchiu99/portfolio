@@ -1,6 +1,5 @@
 import '../../../Project.css';
-import YoutubeEmbed from "../../../../YoutubeEmbed";
-import Collapsible from "../../../../Collapsible";
+import * as CommonComp from "../../../../CommonComponents";
 import * as Status from "../../../../ProjectStatus";
 import React from 'react';
 
@@ -22,7 +21,7 @@ export default function Component() {
                     <p class="description">
                         To have a living world, I would like to add some AI NPC in game.
                     </p>
-                    <Collapsible title="My AI initial findings : ">
+                    <CommonComp.Collapsible title="My AI initial findings : ">
                         <p class="description">
                             With some testing, I have found out that nav meshs can not be atteched to moving objects (Technically you can, but it is resource consuming).
                             So the image of NPC walking around the ship cannot be easily done currently.
@@ -35,14 +34,14 @@ export default function Component() {
                             However, I would like to keep some complicated AI sensing / task in c++ for a more coherrent programming experience,
                             which also lets me to code more complex systems without being confused by the lines in blueprint coding.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
 
                     <br></br>
 
-                    <Collapsible title="Details / To Do List: ">  
+                    <CommonComp.Collapsible title="Details / To Do List: ">  
                         <ul class="description">
                             <li>
-                                <Collapsible title="Roaming AI (Explored)">   
+                                <CommonComp.Collapsible title="Roaming AI (Explored)">   
                                     <h4>Vision: </h4>
                                     <p>
                                         NPC should be able to roam around on islands and on ship. 
@@ -62,10 +61,10 @@ export default function Component() {
                                         I have currently left the NPCs as is, so that more work can be done with the Weapon and Airship Ai.
                                     </p>
 
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                             </li>
                             <li>
-                                <Collapsible title="Turret AI (Explored)">          
+                                <CommonComp.Collapsible title="Turret AI (Explored)">          
                                     <h4>Vision: </h4>
                                     <p>
                                         The Weapon AI would be an AI that when given a target, it will rotate a turret to face that target, and will fire once it is "On target".
@@ -114,10 +113,10 @@ export default function Component() {
                                         </ol>
                                     </p>
 
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                             </li>
                             <li>
-                                <Collapsible title="Ship AI (Ongoing)">                             
+                                <CommonComp.Collapsible title="Ship AI (Ongoing)">                             
                                     <p>
                                         The ship AI should have the ability to navigate to waypoints automatically.
                                         For now, I thought the best way to do it is to let the AI spawn waypoints that points towards the destination. 
@@ -128,14 +127,14 @@ export default function Component() {
                                         I planned to create static waypoints around the island so that if the path will hit the island (using a collision box around the island),
                                         the AI system should follow the static waypoints to navigate around the island.
                                     </p>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                             </li>
                         </ul>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
 
                     <br></br>
 
-                    <Collapsible title="Resources :">        
+                    <CommonComp.Collapsible title="Resources :">        
                         <ul class="description">
                             <li>
                                 <p class="description">
@@ -147,14 +146,14 @@ export default function Component() {
                             </li>
 
                         </ul>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
 
                 </div>
                 <div class="column">
                     <div class="round">
                         <div class="round_video" style={{ background: "gray", color: "black", width: "75%", float: "Right" }}>
                             <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                                <YoutubeEmbed embedId="Lbz8k-rxJac" />
+                                <CommonComp.YoutubeEmbed embedId="Lbz8k-rxJac" />
                                 <p style={{ "text-align": "center", color: 'white' }}>A first look at the Turret AI</p>
                             </div>
                         </div>
@@ -162,7 +161,7 @@ export default function Component() {
                     <div class="round">
                         <div class="round_video" style={{ background: "gray", color: "black", width: "75%", float: "Right" }}>
                             <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                                <YoutubeEmbed embedId="nhVLTipaa5s" />
+                                <CommonComp.YoutubeEmbed embedId="nhVLTipaa5s" />
                                 <p style={{ "text-align": "center", color: 'white' }}>
                                     (NPCs) The result of following Ryan Laley's AI tutorial
                                     <ol class="description">

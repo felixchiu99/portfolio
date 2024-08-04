@@ -1,9 +1,11 @@
 import '../App.css';
-import React from 'react';
-import Collapsible from "../Collapsible";
+import React, { useState } from "react";
+import * as CommonComp from "../CommonComponents";
 import * as Intro from "../Project/index";
+import HighlightedProjects from "./HighlightedProjects"
 
 function Home() {
+    const [selectedTag, setSelectedTag] = useState('None')
     return (
         <div className="App">
             <header className="Main Title">
@@ -18,24 +20,21 @@ function Home() {
                         <br></br>
                         This is a place for me to store and show my projects.
                     </p>
+                    <a href="/portfolio/#/AllProjects" >
+                        <button class="button" >All Projects</button>
+                    </a>
                 </header>
             </header>
 
-            <Intro.InteriorDeco></Intro.InteriorDeco>
+            <CommonComp.TagSelector setParentSelectedTag={setSelectedTag}></CommonComp.TagSelector>
 
-            <Intro.AirshipProject></Intro.AirshipProject>
-
-            <Intro.StuBrew></Intro.StuBrew>
-
-            <Intro.InkHell></Intro.InkHell>
-
-            <Intro.ArcheryVR></Intro.ArcheryVR>
+            <HighlightedProjects selectedTag={selectedTag}></HighlightedProjects>
 
             <div className="ProjectAlt">
-                <Collapsible title="Older Works">
+                <CommonComp.Collapsible title="Older Works">
                     <Intro.CSC8503></Intro.CSC8503>
                     <Intro.CSC8502></Intro.CSC8502>
-                </Collapsible>
+                </CommonComp.Collapsible>
             </div>
         </div>
     );

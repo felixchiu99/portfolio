@@ -1,9 +1,7 @@
 import '../../Project.css';
 import React from 'react';
-import YoutubeEmbed from "../../../YoutubeEmbed";
-import Collapsible from "../../../Collapsible";
 import * as Status from '../../../ProjectStatus';
-import * as CommonComponents from "./CommonComponents"
+import * as CommonComp from "../../../CommonComponents";
 import * as Stage0 from "./Section"
 
 function Airship() {
@@ -19,14 +17,14 @@ function Airship() {
 
                 <h4 class="description">Ongoing</h4>
                 <ul class="description">
-                    <li><Collapsible title="AI Experiements (Ongoing)"> <Stage0.AIExperiment></Stage0.AIExperiment> </Collapsible></li>
+                    <li><CommonComp.Collapsible title="AI Experiements (Ongoing)"> <Stage0.AIExperiment></Stage0.AIExperiment> </CommonComp.Collapsible></li>
                 </ul>
 
                 <h4 class="description">Completed (New to Old)</h4>
                 <ul class="description">
-                    <li><Collapsible title="UI Menu (Completed)"> <Stage0.UIMenu></Stage0.UIMenu> </Collapsible></li>
-                    <li><Collapsible title="Airship (Completed)"> <Stage0.Airship></Stage0.Airship> </Collapsible></li>
-                    <li><Collapsible title="Weapons (Completed)"> <Stage0.Weapon></Stage0.Weapon> </Collapsible></li>
+                    <li><CommonComp.Collapsible title="UI Menu (Completed)"> <Stage0.UIMenu></Stage0.UIMenu> </CommonComp.Collapsible></li>
+                    <li><CommonComp.Collapsible title="Airship (Completed)"> <Stage0.Airship></Stage0.Airship> </CommonComp.Collapsible></li>
+                    <li><CommonComp.Collapsible title="Weapons (Completed)"> <Stage0.Weapon></Stage0.Weapon> </CommonComp.Collapsible></li>
                 </ul>
 
                 <h4 class="description">Planned</h4>
@@ -42,7 +40,7 @@ function Airship() {
                     */}
                 </ul>
 
-                <CommonComponents.ReturnButton></CommonComponents.ReturnButton>
+                <CommonComp.ReturnButton link='/portfolio/#/AirshipProject'></CommonComp.ReturnButton>
             </header>
 
         </div>

@@ -1,6 +1,5 @@
 import '../../../Project.css';
-import YoutubeEmbed from "../../../../YoutubeEmbed";
-import Collapsible from "../../../../Collapsible";
+import * as CommonComp from "../../../../CommonComponents";
 import * as Status from "../../../../ProjectStatus";
 import React from 'react';
 
@@ -34,21 +33,21 @@ export default function Component() {
                         The Player will have Four main duty. 
                         <ol class="description">
                             <li>
-                                <Collapsible title="Buy / Upgrade Anti-Air Turrets On the Island during Preparation phase.">
+                                <CommonComp.Collapsible title="Buy / Upgrade Anti-Air Turrets On the Island during Preparation phase.">
                                     <p>
                                         There will be slots on the island that the player can unlock with the rewards from each wave.
                                     </p>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                             </li>
                             <li>
-                                <Collapsible title="Recruit more workers during Preparation phase.">
+                                <CommonComp.Collapsible title="Recruit more workers during Preparation phase.">
                                     <p>
                                         Each turret needs to be manned. As the player adds more Turrets in the area, more man power will be needed.
                                     </p>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                             </li>
                             <li>
-                                <Collapsible title="Toogle Turret availability to react to real time threat in Defence phase.">
+                                <CommonComp.Collapsible title="Toogle Turret availability to react to real time threat in Defence phase.">
                                     <p>
                                         During the Invasion, I plan to have three spawn point that the invasion force will spawn at, with each wave unlocking one.
                                     </p>
@@ -58,10 +57,10 @@ export default function Component() {
                                     <p>
                                         Whichever is the most useful will be determined by the player.
                                     </p>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                             </li>
                             <li>
-                                <Collapsible title="Man the turret to increase efficiency of a turret.">
+                                <CommonComp.Collapsible title="Man the turret to increase efficiency of a turret.">
                                     <p>
                                         As the AI controlled Turret as still quite inaccurate,
                                         the player should be allowed to man the turret themselves and boost the defences of that area.
@@ -69,7 +68,7 @@ export default function Component() {
                                     <p>
                                         But that would leave other areas unmanaged and might lose the battle.
                                     </p>
-                                </Collapsible>
+                                </CommonComp.Collapsible>
                             </li>
                         </ol>
                     </p>

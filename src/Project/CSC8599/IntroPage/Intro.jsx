@@ -1,7 +1,8 @@
 import '../../../App.css';
 import React from 'react';
-import YoutubeEmbed from "../../../YoutubeEmbed";
+import * as CommonComp from "../../../CommonComponents";
 import * as Status from '../../../ProjectStatus';
+import Info from "../Info"
 
 export default function Project() {
     return (
@@ -12,6 +13,7 @@ export default function Project() {
                 <div class="column">
                     <div class="round">
                         <div>
+                            <CommonComp.InfoDisplay class="description" Info={Info}></CommonComp.InfoDisplay>
                             <h4 class="description">
                                 Game Engine: Unity
                             </h4>
@@ -40,7 +42,7 @@ export default function Project() {
                 <div class="column" >
                     <div class="round" style={{ background: "white", color: "black" }}>
                         <h4>StuBrew: Demo</h4>
-                        <YoutubeEmbed embedId="DK0heSvBuV8" />
+                        <CommonComp.YoutubeEmbed embedId="DK0heSvBuV8" />
                         <p class="description">
                             Brewing and Selling to your hearts content.
                         </p>

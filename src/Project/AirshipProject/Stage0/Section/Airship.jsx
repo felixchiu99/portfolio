@@ -1,6 +1,5 @@
 import '../../../Project.css';
-import YoutubeEmbed from "../../../../YoutubeEmbed";
-import Collapsible from "../../../../Collapsible";
+import * as CommonComp from "../../../../CommonComponents";
 import * as Status from "../../../../ProjectStatus";
 import React from 'react';
 
@@ -22,7 +21,7 @@ export default function Component() {
                     </p>
                     <ul class="description">
                         <li>
-                            <Collapsible title="Design Thoughts">
+                            <CommonComp.Collapsible title="Design Thoughts">
                                 <p>
                                     Prior to creating this prototype, I have thought of two ways of doing airship movement.
                                 </p>
@@ -57,10 +56,10 @@ export default function Component() {
                                 <p>
                                     I decided to choose to go with the physical route.
                                 </p>
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="Movement Implementation">
+                            <CommonComp.Collapsible title="Movement Implementation">
                                 <h5>Lift</h5>
                                 <p>
                                     This first problem to overcome was getting the airship floating.
@@ -120,10 +119,10 @@ export default function Component() {
                                     The Upward force will diminish the higher it gets and will end at (current) 15000 unit.
                                 </p>
 
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="Mount / Ship Components">
+                            <CommonComp.Collapsible title="Mount / Ship Components">
                                 <p>
                                     As mentioned above, I have created a sample of a ship components in the form of the ship's helm/controller.
                                     At this time, I haven't expanded on this system yet, but this can be expanded quite easily.
@@ -131,7 +130,7 @@ export default function Component() {
                                 <p>
                                     As this session involve customization, I want to get UI working before continuing onward.
                                 </p> 
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                     </ul>
                     
@@ -141,7 +140,7 @@ export default function Component() {
                     <div class="round">
                         <div class="round_video" style={{ background: "gray", color: "black", width: "75%", float: "Right" }}>
                             <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                                <YoutubeEmbed embedId="GmV63ISOkik" />
+                                <CommonComp.YoutubeEmbed embedId="GmV63ISOkik" />
                                 <p style={{ "text-align": "center", color: 'white' }}>Showcase of the current Airship control/movement prototype</p>
                             </div>
                         </div>

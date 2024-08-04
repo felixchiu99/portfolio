@@ -1,6 +1,5 @@
 import '../../../Project.css';
-import YoutubeEmbed from "../../../../YoutubeEmbed";
-import Collapsible from "../../../../Collapsible";
+import * as CommonComp from "../../../../CommonComponents";
 import * as Status from "../../../../ProjectStatus";
 import React from 'react';
 
@@ -28,7 +27,7 @@ export default function Component() {
                     </p>
                     <ul class="description">
                         <li>
-                            <Collapsible title="Interchangeablity">
+                            <CommonComp.Collapsible title="Interchangeablity">
                                 <p>
                                     The cannon was split into three core systems: the Turret, the Cannon and the projectile. Which should be easily converted in BPs/Extended for custom functions.
                                 </p>
@@ -44,17 +43,17 @@ export default function Component() {
                                 <p>
                                     All three should be able to be change quite easily.
                                 </p>
-                                <Collapsible title="Self Comment:">
+                                <CommonComp.Collapsible title="Self Comment:">
                                     <p>
                                         There are quite a lot of minor fixes I can thought of right now,
                                         for example, dynamically storing the number of cannons in the turret, Multiple projectile type, More slot types (large turret vs small MG mount).
                                         However, I think it is best to leave these work later and focus on creating more core systems before polishing on these.
                                     </p>
-                                </Collapsible>
-                            </Collapsible>
+                                </CommonComp.Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="Expandability">
+                            <CommonComp.Collapsible title="Expandability">
                                 <p>
                                     The SFX and VFX Should be easily changeable if needed.
                                 </p>
@@ -74,10 +73,10 @@ export default function Component() {
 
                                 </p>
 
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="Limited Firing Arc">
+                            <CommonComp.Collapsible title="Limited Firing Arc">
                                 <p>
                                     The Cannon is able to limit it's firing arc to mimic the limitations on an airship.
                                     However, this can be overrided in the BP for free rotating turrets. (Ground AA)
@@ -86,17 +85,17 @@ export default function Component() {
                                     This was done by having a clamp on the maximum relative rotation of the turret.
                                     A limit rotation boolean allows the rotation function to bypass the clamp if it was unchecked.
                                 </p>
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="Auto Firing">
+                            <CommonComp.Collapsible title="Auto Firing">
                                 <p>
                                     The Cannon can be set to allow auto firing with a boolean.
                                 </p>
                                 <p>
                                     Made possible by a timer handle that will repeat itself unless told otherwise by the toggle boolean.
                                 </p>
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                     </ul>
 
@@ -105,7 +104,7 @@ export default function Component() {
                     <div class="round">
                         <div class="round_video" style={{ background: "gray", color: "black", width: "75%", float: "Right" }}>
                             <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                                <YoutubeEmbed embedId="1BTy-twodkk" />
+                                <CommonComp.YoutubeEmbed embedId="1BTy-twodkk" />
                                 <p style={{ "text-align": "center", color: 'white' }}>Showcase of the current final weapon prototype</p>
                             </div>
                         </div>
@@ -117,7 +116,7 @@ export default function Component() {
             </h4>
             <ul class="description">
                 <li>
-                    <Collapsible title="AI compatibility">
+                    <CommonComp.Collapsible title="AI compatibility">
                         <p>
                             I did think that if there are multiple cannons in an airship,
                             it would become hard to utilise all of them if all you can control is one cannon.
@@ -126,10 +125,10 @@ export default function Component() {
                             That's where the Cannon AI comes in. The 
                             The system should be able to easily compatable with a firing AI and can be replaced by the player when interacting with the cannon.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Fire Control Unit compatibility">
+                    <CommonComp.Collapsible title="Fire Control Unit compatibility">
                         <p>
                             Even with a Cannon AI controlling the Cannons, it will get messy in terms of targeting.
                             A focused barrage is better than scattered firing in most situation.
@@ -143,35 +142,35 @@ export default function Component() {
                         <p>
                             I probably will experiment with this idea later on.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Accurracy setting">
+                    <CommonComp.Collapsible title="Accurracy setting">
                         <p>Currently the projectile will shoot straight without any variation, this should be quite easy to add.</p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Ammo Count">
+                    <CommonComp.Collapsible title="Ammo Count">
                         <p>It will be more realistic to have the cannon be limited with how much ammo they got.</p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Barrel Shadow & Collision">
+                    <CommonComp.Collapsible title="Barrel Shadow & Collision">
                         <p>
                             The current barrel has a animation for the recoil,
                             however, it seems to have some problem with the collision & shadow calculation.
                             From what I can tell, it is related to the skeletal mesh for the barrel mesh.
                             More testing will be needed here.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Performance & Optimisation Study">
+                    <CommonComp.Collapsible title="Performance & Optimisation Study">
                         <p>
                             I am not sure about the large scale performance for this kind of system. 
                             However, I kind of want to wait until the fire control and AI is completed before I continue.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
             </ul>
         </div>

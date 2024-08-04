@@ -1,5 +1,5 @@
 import '../../../Project.css';
-import Collapsible from "../../../../Collapsible";
+import * as CommonComp from "../../../../CommonComponents";
 import React from 'react';
 
 export default function Component() {
@@ -12,7 +12,7 @@ export default function Component() {
             </p>
             <ul class="description">
                 <li>
-                    <Collapsible title="A leaf in the wind">
+                    <CommonComp.Collapsible title="A leaf in the wind">
                         <p>
                             As much as I hate promoting being powerless, this is something I want the game to initially feel like.
                             When Countries go to war, there is often not much you can do about it.
@@ -29,10 +29,10 @@ export default function Component() {
                         <p>
                             This is the feeling I want the player to feel when playing the game. Not sure if I can make it work, but I'll try.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Trade">
+                    <CommonComp.Collapsible title="Trade">
                         <p>
                             Trade/Logistic are an important aspect in a military conflict,
                             but I usually did not see it implemented well in a first-person game before.
@@ -48,10 +48,10 @@ export default function Component() {
                         <p>
                             Hopefully the player can feel the pressure of keeping the region running in through Game mechanics alone.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
                 <li>
-                    <Collapsible title="Able to Adapt to environment">
+                    <CommonComp.Collapsible title="Able to Adapt to environment">
                         <p>
                             With that much focus in the effect of the environment and having a limit on what one can do,
                             one way of giving empowerment to the player is to allow customisation for the airships.
@@ -65,7 +65,7 @@ export default function Component() {
                         <p>
                             Hopefully this gives the player some options in facing the challenge this game presents.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </li>
             </ul>
 

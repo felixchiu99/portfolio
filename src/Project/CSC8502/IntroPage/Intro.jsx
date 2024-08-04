@@ -1,7 +1,8 @@
 import '../../../App.css';
 import React from 'react';
-import YoutubeEmbed from "../../../YoutubeEmbed";
+import * as CommonComp from "../../../CommonComponents";
 import * as Status from '../../../ProjectStatus';
+import Info from "../Info"
 
 export default function Project() {
     return (
@@ -11,6 +12,7 @@ export default function Project() {
             <div class="row">
                 <div class="column">
                     <div class="round">
+                        <CommonComp.InfoDisplay class="description" Info={Info}></CommonComp.InfoDisplay>
                         <p class="description">
                             This is the coursework for the Advanced Graphic for Games module.
                             The main goal of this coursework is to make use of graphic and rendering concept learnt during the module to create a scene themed around the game Elden Rings.
@@ -36,7 +38,7 @@ export default function Project() {
                 <div class="column">
                     <div class="round" style={{ background: "white", color: "black" }}>
                         <h4>(Not) Elden Rings</h4>
-                        <YoutubeEmbed embedId="dwNtbS591bI" />
+                        <CommonComp.YoutubeEmbed embedId="dwNtbS591bI" />
                         <p class="description">
                             This is supposed to be elden rings...
                             <br></br>

@@ -1,6 +1,6 @@
 import '../Project.css';
 import React from 'react';
-import YoutubeEmbed from "../../YoutubeEmbed";
+import * as CommonComp from "../../CommonComponents";
 
 function ArcheryVR() {
     return (
@@ -13,7 +13,7 @@ function ArcheryVR() {
                         <div class="round">
                             <div class="round" style={{background:"white", color: "black", width: "40%", float: "Right", margin: "3%", "left-margin": "6%"}}>
                                 <h4>Archery VR</h4>
-                                <YoutubeEmbed embedId="2Tk4htBoEQo" />
+                                <CommonComp.YoutubeEmbed embedId="2Tk4htBoEQo" />
                                 <p class="description">
                                     Can you get 300 points in total? 
                                     If you fail, try using a opposite handed bow, you might just be using the wrong bow!

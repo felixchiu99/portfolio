@@ -1,6 +1,5 @@
 import '../../../Project.css';
-import YoutubeEmbed from "../../../../YoutubeEmbed";
-import Collapsible from "../../../../Collapsible";
+import * as CommonComp from "../../../../CommonComponents";
 import * as Status from "../../../../ProjectStatus";
 import React from 'react';
 
@@ -20,7 +19,7 @@ export default function Component() {
                         A experiment with UE5's UI system, with the minimum goal was to start, exit, and change some systems in-game.
                         During this, I have experiemented with creating UIs using pure blueprint, SlateUI and Blueprints with c++ via bind widgets.
                     </p>
-                    <Collapsible title="My UI Learning journey">
+                    <CommonComp.Collapsible title="My UI Learning journey">
                         <p class="description">
                             I first started to experiement on UI creation by following some tutorial relying on blueprints.
                             Creating UI with blueprints is great for layout, but for a programmer, it is painful to create all functionality in blueprints.
@@ -43,12 +42,12 @@ export default function Component() {
                         <p class="description">
                             With the learning phase finished, I moved on to implementing the respective menus/uis.
                         </p>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                     <br></br>
-                    <Collapsible title="Details / Implementation List: "> 
+                    <CommonComp.Collapsible title="Details / Implementation List: "> 
                         <ul class="description">
                         <li>
-                            <Collapsible title="Main Menu">
+                                <CommonComp.Collapsible title="Main Menu">
                                 <p>
                                     The Main Menu has the following button.
                                     <ul class="description">
@@ -71,10 +70,10 @@ export default function Component() {
                                     However, as I have not created a "save" function for game settings,
                                     so the settings will not persist over restarting the game.
                                 </p>
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="Level select Menu">
+                            <CommonComp.Collapsible title="Level select Menu">
                                 <p>
                                     The Level select Menu is a simple menu page where players can load the created test prototypes.   
                                 </p>
@@ -86,10 +85,10 @@ export default function Component() {
                                     Note: While I have created a working example for a level loader that auto-populate the level button from a directory,
                                     I did have trouble initialising the level buttons on spawn. This will be revisited in later test.
                                 </p>
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="Pause Menu">
+                            <CommonComp.Collapsible title="Pause Menu">
                                 <p>
                                     A Menu that can be opened in game.
                                     <ul class="description">
@@ -116,10 +115,10 @@ export default function Component() {
                                     Set game input to be UI only and pause the game from running in the background.
                                 </p>
 
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="Settings Menu">
+                            <CommonComp.Collapsible title="Settings Menu">
                                 <p>
                                     A Menu that save settings in game.
                                     I haven't come up with much settings for now, but here are some ideas.
@@ -151,10 +150,10 @@ export default function Component() {
                                 <p>
                                     The next time I revisit settings UI, I probably will learn about saving UI options, then coding general game save. 
                                 </p>
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                         <li>
-                            <Collapsible title="Tooltips">
+                            <CommonComp.Collapsible title="Tooltips">
                                 <p>
                                     One of the comments I had from my last project was the lack of directions.
                                     So this time, when shown how to implemment a health bar in tutorials,
@@ -188,12 +187,12 @@ export default function Component() {
                                 <p>
                                     Once the player removes their gaze, the tooltip will be set to in visible.
                                 </p>
-                            </Collapsible>
+                            </CommonComp.Collapsible>
                         </li>
                     </ul>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                     <br></br>
-                    <Collapsible title="Resources :">
+                    <CommonComp.Collapsible title="Resources :">
                         <ul class="description">
                             <li>
                                 Slate UI Tutorial: https://www.youtube.com/watch?v=jeK6DPB5weA
@@ -208,18 +207,18 @@ export default function Component() {
                                 _benui's Webpage: https://benui.ca/
                             </li>
                         </ul>
-                    </Collapsible>
+                    </CommonComp.Collapsible>
                 </div>
                 <div class="column">
                     <div class="round">
                         <div class="round_video" style={{ background: "gray", color: "black", width: "75%", float: "Right" }}>
                             <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
                                 <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                                    <YoutubeEmbed embedId="-GuVPsxYj6w" />
+                                    <CommonComp.YoutubeEmbed embedId="-GuVPsxYj6w" />
                                     <p style={{ "text-align": "center", color: 'white' }}>Showcase of the current Menus</p>
                                 </div>
                                 <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                                    <YoutubeEmbed embedId="2qe7Eczwhlo" />
+                                    <CommonComp.YoutubeEmbed embedId="2qe7Eczwhlo" />
                                     <p style={{ "text-align": "center", color: 'white' }}>Showcase of the Tooltip widget</p>
                                 </div>
                             </div>
