@@ -1,3 +1,4 @@
+import Data from "./IntroPage/Data"
 const Info = {
     Tag : [
         "Major Project",
@@ -8,6 +9,7 @@ const Info = {
         "UI/UX"
     ],
     Date_Start: "2024-03-04",
-    Date_End: ""
+    Date_End: "",
+    Intro: Data
 }
 export default Info;

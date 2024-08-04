@@ -16,5 +16,6 @@
     margin: 0.5%;
     color: white;
     padding: 0.3%;
-    alignSelf: baseline;
+    alignSelf: "baseline";
+    fontSize: "16px";
 }

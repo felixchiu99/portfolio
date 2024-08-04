@@ -6,7 +6,7 @@ const TagDisplay = ({ tagNames }) => {
     return (
         <>
             <div className="tagDisplay">
-                <h4> Tags: </h4>
+                <h5> Tags: </h5>
                 <div className="tagDiv">
                     {tagNames.map((tagName) => {
                         return (
