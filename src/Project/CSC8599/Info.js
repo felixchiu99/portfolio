@@ -1,3 +1,4 @@
+import Data from "./IntroPage/Data"
 const Info = {
     Tag: [
         "Major Project",
@@ -8,6 +9,7 @@ const Info = {
         "VR"
     ],
     Date_Start: "2023-06-03",
-    Date_End: "2023-08-20"
+    Date_End: "2023-08-20",
+    Intro: Data
 }
 export default Info;

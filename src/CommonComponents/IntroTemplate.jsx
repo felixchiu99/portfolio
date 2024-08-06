@@ -42,7 +42,7 @@ const IntroTemplate = ({ Info }) => {
                                         :null
                                 }
                                 {
-                                    Data.TimeTaken
+                                    Data.TimeTaken.length>0
                                         ?
                                         <>
                                             <h5 class="description">
@@ -52,7 +52,7 @@ const IntroTemplate = ({ Info }) => {
                                                 {
                                                     Data.TimeTaken.map((data) => {
                                                         return (
-                                                            <li>{data}</li>
+                                                            <li key={data}>{data}</li>
                                                         );
                                                     })
                                                 }
@@ -63,20 +63,25 @@ const IntroTemplate = ({ Info }) => {
                                 {
                                     Data.Description.map((data) => {
                                         return (
-                                            <p class="description">{data}</p>
+                                            <p key={data} class="description">{data}</p>
                                         );
                                     })
                                 }
 
-                                <p class="description">
-                                    More in detail page.
-                                </p>
-
                                 <br></br>
-
-                                <a href={Data.UrlReadMore.Link} class="description">
-                                    <button class="button">{Data.UrlReadMore.Label}</button>
-                                </a>
+                                {
+                                    JSON.stringify(Data.UrlReadMore) !== "{}"
+                                        ?
+                                        <>
+                                            <p class="description">
+                                                More in detail page.
+                                            </p>
+                                            <a href={Data.UrlReadMore.Link} class="description">
+                                                <button class="button">{Data.UrlReadMore.Label}</button>
+                                            </a>
+                                        </>
+                                        : null
+                                }
                             </div>
                         </div>
                     </div>
@@ -85,13 +90,13 @@ const IntroTemplate = ({ Info }) => {
                             <h4>Latest Clips</h4>
                             <h4>{Data.Video.Title}</h4>
 
-                            <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
+                            <div style={{ width: "100%", "paddingRight": "1%", float: "Left" }}>
                                 {
                                     Data.Video.VideoDetail.map((data) => {
                                         return (
                                             <>
-                                                <CommonComp.YoutubeEmbed embedId={data.Link} />
-                                                {data.Caption ? <p>{data.Caption}</p>:null}
+                                                <CommonComp.YoutubeEmbed key={data.Link} embedId={data.Link} />
+                                                {data.Caption ? <p key={data.Caption}>{data.Caption}</p>:null}
                                             </>
                                         );
                                     })

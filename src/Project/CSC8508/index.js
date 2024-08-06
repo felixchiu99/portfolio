@@ -1,1 +1,0 @@
-export { default as InkHell } from './IntroPage/Intro';

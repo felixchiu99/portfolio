@@ -17,10 +17,10 @@ const TagSelector = ({setParentSelectedTag}) => {
             <label>
                 Filter Tag: 
                 <select name="selectedTag" defaultValue={selectedTag} onChange={e => tagChange(e)}>
-                    <option value="None">None</option>
+                    <option key="None" value="None">None</option>
                     {AllTags.map((tagName) => {
                         return (
-                            <option value={tagName}>{tagName}</option>
+                            <option key={tagName} value={tagName}>{tagName}</option>
                         );
                     })}
                 </select>

@@ -10,7 +10,7 @@ const TagDisplay = ({ tagNames }) => {
                 <div className="tagDiv">
                     {tagNames.map((tagName) => {
                         return (
-                            <div className="tag">
+                            <div key={tagName} className="tag">
                                 {tagName}
                             </div>
                         );

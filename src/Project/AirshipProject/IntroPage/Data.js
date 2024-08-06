@@ -7,7 +7,7 @@ const Info = {
     "LastUpdate": "2024-05-22",
     "GameEngine": "Unreal Engine 5",
     "CurrentFocus": "AI",
-    "TimeTaken": "",
+    "TimeTaken": [],
     "Description": [
         "I have always wanted to make a Airship based game in the past. I started to brainstorm this idea in Unity during easter 2023, but the coursework has paused the game making process.",
         "Now with ongoing job Hunting, I wanted to expand my skillset. So I started this project to force myself into learning how to properly use Unreal Engine 5.",
