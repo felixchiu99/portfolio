@@ -7,15 +7,11 @@ class HidableWTag extends React.Component {
                 open: true
             }
         this.togglePanel = this.togglePanel.bind(this);
-
+        this.checkTags();
     }
 
-    componentDidUpdate(prevProps) {
-        // do something
-        if (prevProps === this.props)
-            return;
-
-        if (this.props.tags)
+    checkTags() {
+        if (this.props.tags) {
             if (this.props.selectedTag === "None") {
                 this.setState({ open: true });
             } else if (this.props.tags.includes(this.props.selectedTag)) {
@@ -23,6 +19,16 @@ class HidableWTag extends React.Component {
             } else {
                 this.setState({ open: false });
             }
+        }
+            
+    }
+
+    componentDidUpdate(prevProps) {
+        // do something
+        if (prevProps === this.props)
+            return;
+
+        this.checkTags();
     }
 
     togglePanel(e){

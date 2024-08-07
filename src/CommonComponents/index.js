@@ -4,5 +4,6 @@ export { default as YoutubeEmbed } from './YoutubeEmbed';
 export { default as ReturnButton } from './ReturnButton';
 export { default as TagDisplay } from './TagDisplay';
 export { default as TagSelector } from './TagSelector';
+export { default as SortDirectionSelector } from './SortDirectionSelector';
 export { default as InfoDisplay } from './InfoDisplay';
 export { default as IntroTemplate } from './IntroTemplate';
