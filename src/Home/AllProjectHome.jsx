@@ -1,10 +1,11 @@
 import '../App.css';
 import React, { useState } from "react";
 import * as CommonComp from "../CommonComponents";
-import AllProject from "./AllProjects"
+import ProjectIntros from "./ProjectIntros"
+import InfoList from "../Project/indexIntroAll";
 
 function AllProjectHome() {
-    const [selectedTag, setSelectedTag] = useState('None')
+    const [displayInfo, setDisplayInfo] = useState(InfoList);
     return (
         <div className="App">
             <header className="Main Title">
@@ -20,9 +21,9 @@ function AllProjectHome() {
                 </header>
             </header>
 
-            <CommonComp.TagSelector setParentSelectedTag={setSelectedTag}></CommonComp.TagSelector>
+            <CommonComp.SortAndFilter setParentDisplayList={setDisplayInfo} dataList={InfoList}></CommonComp.SortAndFilter>
 
-            <AllProject selectedTag={selectedTag}></AllProject>
+            <ProjectIntros InfoList={displayInfo}></ProjectIntros>
 
             <CommonComp.ReturnButton link='/portfolio'></CommonComp.ReturnButton>
         </div>

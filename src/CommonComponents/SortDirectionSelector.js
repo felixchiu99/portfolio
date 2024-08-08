@@ -12,7 +12,7 @@ const SortDirectionSelector = ({setParentSortDir}) => {
     return (
         <>  
             <label>
-                Sort By: <button onClick={OnDirClick}>
+                Sort By: {" "} <button onClick={OnDirClick}>
                     {sortDir?"Oldest":"Latest"}
                 </button>
             </label>

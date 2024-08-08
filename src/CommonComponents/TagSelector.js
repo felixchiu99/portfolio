@@ -15,7 +15,7 @@ const TagSelector = ({setParentSelectedTag}) => {
     return (
         <>  
             <label>
-                Filter Tag: 
+                Filter Tag:  {" "}
                 <select name="selectedTag" defaultValue={selectedTag} onChange={e => tagChange(e)}>
                     <option key="None" value="None">None</option>
                     {AllTags.map((tagName) => {

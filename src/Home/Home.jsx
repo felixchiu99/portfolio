@@ -1,49 +1,11 @@
 import '../App.css';
 import React, { useState } from "react";
 import * as CommonComp from "../CommonComponents";
-import HighlightedProjects from "./HighlightedProjects"
+import ProjectIntros from "./ProjectIntros"
 import InfoList from "../Project/indexIntroHighlight";
 
 function Home() {
-    const [selectedTag, setSelectedTag] = useState('None')
-    const [sortDir, setSortDir] = useState('None')
     const [displayInfo, setDisplayInfo] = useState(InfoList);
-    function SortTest(list, sortDir) {
-        list = list.sort((a, b) => {
-            if (sortDir) {
-                if (a.Date_Start > b.Date_Start) {
-                    return -1;
-                }
-            } else {
-                if (a.Date_Start < b.Date_Start) {
-                    return -1;
-                }
-            }
-
-        })
-        return list;
-    }
-
-    function FilterTag(list, tag) {
-        var list = list.filter((data) => tag==="None"?true:data.Tag.includes(tag));
-        return list;
-    }
-    function OnSortDirChange(dir){
-        setSortDir(dir);
-        OnChange(dir, selectedTag);
-    }
-
-    function OnSetSelectedTag(tag) {
-        setSelectedTag(tag);
-        OnChange(sortDir, tag);
-    }
-
-    function OnChange(sort,tag) {
-        var filtered = FilterTag(InfoList, tag);
-        var sorted = SortTest(filtered, sort);
-        console.log(sorted);
-        setDisplayInfo(sorted);
-    }
 
     return (
         <div className="App">
@@ -62,10 +24,9 @@ function Home() {
                 </header>
             </header>
 
-            <CommonComp.TagSelector setParentSelectedTag={OnSetSelectedTag}></CommonComp.TagSelector>
-            <CommonComp.SortDirectionSelector setParentSortDir={OnSortDirChange}></CommonComp.SortDirectionSelector>
+            <CommonComp.SortAndFilter setParentDisplayList={setDisplayInfo} dataList={InfoList}></CommonComp.SortAndFilter>
 
-            <HighlightedProjects selectedTag={selectedTag} InfoList={displayInfo}></HighlightedProjects>
+            <ProjectIntros InfoList={displayInfo}></ProjectIntros>
 
             <div className="ProjectAlt">
                 <a href="/portfolio/#/AllProjects" >
