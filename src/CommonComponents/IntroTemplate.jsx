@@ -32,7 +32,7 @@ const IntroTemplate = ({ Info }) => {
                             <div>
                                 <CommonComp.InfoDisplay Info={Info}></CommonComp.InfoDisplay>
                                 <h4 class="description">
-                                    Game Engine: {Data.GameEngine}
+                                    Game Engine / Tools: {Data.GameEngine}
                                 </h4>
                                 {
                                     Data.CurrentFocus
@@ -85,50 +85,67 @@ const IntroTemplate = ({ Info }) => {
                             </div>
                         </div>
                     </div>
-                    <div class="column" >
-                        <div class="round" style={{ background: "white", color: "black" }}>
-                            <h4>Latest Clips</h4>
-                            <h4>{Data.Video.Title}</h4>
-
-                            <div style={{ width: "100%", "paddingRight": "1%", float: "Left" }}>
-                                {
-                                    Data.Video.VideoDetail.map((data) => {
-                                        return (
+                    {
+                        Data.Video || Data.Links
+                            ?
+                            <div class="column" >
+                                <div class="round" style={{ background: "white", color: "black" }}>
+                                    {
+                                        Data.Video ?
                                             <>
-                                                <CommonComp.YoutubeEmbed key={data.Link} embedId={data.Link} />
-                                                {data.Caption ? <p key={data.Caption}>{data.Caption}</p>:null}
-                                            </>
-                                        );
-                                    })
-                                }
-                                <p>{Data.Video.Description}</p>
-                            </div>
+                                                <h4>Latest Clips</h4>
+                                                <h4>{Data.Video.Title}</h4>
 
-                            <div>
-                                {
-                                    Data.Links.Repository
-                                        ?
-                                        <a href={Data.Links.Repository.Link}>
-                                            <button class="button">{Data.Links.Repository.Label}</button>
-                                        </a>
-                                        :
-                                        null
-                                }
-                            
+                                                <div style={{ width: "100%", "paddingRight": "1%", float: "Left" }}>
+                                                    {
+                                                        Data.Video.VideoDetail.map((data) => {
+                                                            return (
+                                                                <>
+                                                                    <CommonComp.YoutubeEmbed key={data.Link} embedId={data.Link} />
+                                                                    {data.Caption ? <p key={data.Caption}>{data.Caption}</p> : null}
+                                                                </>
+                                                            );
+                                                        })
+                                                    }
+                                                    <p>{Data.Video.Description}</p>
+                                                </div>
+                                            </>
+                                            : null
+                                    }
+                                    {
+                                        Data.Links
+                                            ?
+                                            <>
+                                                <div>
+                                                    {
+                                                        Data.Links.Repository
+                                                            ?
+                                                            <a href={Data.Links.Repository.Link}>
+                                                                <button class="button">{Data.Links.Repository.Label}</button>
+                                                            </a>
+                                                            :
+                                                            null
+                                                    }
+                                                </div>
+                                                <div>
+                                                    {
+                                                        Data.Links.ReleasePage
+                                                            ?
+                                                            <a href={Data.Links.ReleasePage.Link}>
+                                                                <button class="button">{Data.Links.ReleasePage.Label}</button>
+                                                            </a>
+                                                            :
+                                                            null
+                                                    }
+                                                </div>
+                                            </>
+                                            : <p>.</p>
+
+                                    }
+                                </div>
                             </div>
-                            <div>
-                                {
-                                    Data.Links.ReleasePage
-                                        ?
-                                        <a href={Data.Links.ReleasePage.Link}>
-                                            <button class="button">{Data.Links.ReleasePage.Label}</button>
-                                        </a>
-                                        :
-                                        null
-                                }
-                            </div>
-                        </div>
-                    </div>
+                            : null
+                    }
                 </div>
             </header>
     );

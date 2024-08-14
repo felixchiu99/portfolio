@@ -5,3 +5,5 @@ export { default as InkHell } from './CSC8508/Info';
 export { default as StuBrew } from './CSC8599/Info';
 export { default as CSC8503 } from './CSC8503/Info';
 export { default as CSC8502 } from './CSC8502/Info';
+export { default as TeamCityExperiment } from './TeamCityExperiment/Info';
+export { default as MCBiomeGrowth } from './MCMod-BiomeGrowth/Info';
