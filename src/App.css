@@ -124,8 +124,16 @@
     color: cyan;
 }
 
+.OnHold {
+  color: orange;
+}
+
 .Completed {
     color: darkseagreen;
+}
+
+.Cancelled {
+  color: maroon;
 }
 
 @keyframes App-logo-spin {

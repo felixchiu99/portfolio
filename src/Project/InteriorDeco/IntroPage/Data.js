@@ -1,19 +1,19 @@
 const Info = {
     Title: "InteriorDeco",
     Status: {
-        "Name": "Sprint 3",
-        "Type": "Ongoing"
+        "Name": "Version 0.1.4 Custom Layout",
+        "Type": "OnHold"
     },
     "LastUpdate": "2024-06-16",
     "GameEngine": "Unreal Engine 5",
     "TimeTaken": [
-        "Sprint 2 - 16 Hrs (10 days)",
-        "Minimal Delivery - 18 Hrs (3 days)"
+        "Version 0.1.3 (Coloured item) - 30 Hrs (3 months)",
+        "Version 0.1.2 (Save and Object Menu) - 16 Hrs (10 days)",
+        "Version 0.1.1 (Minimal Delivery) - 18 Hrs (3 days)"
     ],
     "Description": [
         "A relative of mine need to decorate her room, she have several idea of bed placement but has difficulty visualising the spatial placement of the room.",
-        "I offered her my help in creating a simple yet detailed 3D model in blender, which then (because of me) spiraled to became a seperate game/tool using unreal engine.",
-        "Currently Working on Sprint 3."
+        "I offered her my help in creating a simple yet detailed 3D model in blender, which then (because of me) spiraled to became a seperate game/tool using unreal engine."
     ],
     "UrlReadMore": {
         "Link": "/portfolio/#/InterDeco",

@@ -13,6 +13,12 @@ const GetStatus = (StatusType) => {
     if (StatusType === "Planning") {
         return <Status.Planning></Status.Planning>;
     }
+    if (StatusType === "OnHold") {
+        return <Status.OnHold></Status.OnHold>;
+    }
+    if (StatusType === "Cancelled") {
+        return <Status.Cancelled></Status.Cancelled>;
+    }
     return <Status.Planning></Status.Planning>;
 }
 

@@ -9,7 +9,8 @@ const InfoList = [
     InfoIndexes.CSC8503,
     InfoIndexes.CSC8502,
     InfoIndexes.TeamCityExperiment,
-    InfoIndexes.MCBiomeGrowth
+    InfoIndexes.MCBiomeGrowth,
+    InfoIndexes.TheLastPresent
 ]
 
 export default InfoList;

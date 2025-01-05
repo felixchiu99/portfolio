@@ -3,9 +3,11 @@ import React from 'react';
 import { Route, Routes, Link } from "react-router-dom";
 import Home from './Home/Home';
 import AllProjectHome from './Home/AllProjectHome';
+
 import ArcheryVR from './Project/ArcheryVR/ArcheryVR';
 import CSC8508 from './Project/CSC8508/CSC8508TeamProject';
 import CSC8599 from './Project/CSC8599/CSC8599StuBrew';
+
 import AirshipProject from './Project/AirshipProject/Main';
 import AirshipDesign from './Project/AirshipProject/Design/Main';
 import AirshipStage0 from './Project/AirshipProject/Stage0/Main';
@@ -14,6 +16,8 @@ import AirshipStage2 from './Project/AirshipProject/Stage2/Main';
 import AirshipStage3 from './Project/AirshipProject/Stage3/Main';
 
 import InteriorDeco from './Project/InteriorDeco/Main';
+
+import TheLastPresent from './Project/TheLastPresent/Main';
 
 function App() {
     return (
@@ -42,6 +46,8 @@ function App() {
                 <Route path="/AirshipProject/Stage3" element={<AirshipStage3 />} >
                 </Route>
                 <Route path="/InterDeco" element={<InteriorDeco />} >
+                </Route>
+                <Route path="/TheLastPresent" element={<TheLastPresent />} >
                 </Route>
             </Routes>
         </div>

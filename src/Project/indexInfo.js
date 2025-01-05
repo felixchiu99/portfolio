@@ -7,3 +7,4 @@ export { default as CSC8503 } from './CSC8503/Info';
 export { default as CSC8502 } from './CSC8502/Info';
 export { default as TeamCityExperiment } from './TeamCityExperiment/Info';
 export { default as MCBiomeGrowth } from './MCMod-BiomeGrowth/Info';
+export { default as TheLastPresent } from './TheLastPresent/Info';

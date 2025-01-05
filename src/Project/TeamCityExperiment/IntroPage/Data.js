@@ -18,7 +18,7 @@ const Info = {
         "Link": "/portfolio/#/InterDeco",
         "Label": "Read More"
     },
-    
+    "Priority" : 2
 
 }
 export default Info;

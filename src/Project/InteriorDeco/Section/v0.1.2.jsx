@@ -8,7 +8,7 @@ export default function Component() {
             <div className="App">
             
                 <header className="Project">
-                    <h2>InteriorDecoV0.1.2</h2>
+                    <h2>InteriorDeco V0.1.2</h2>
                     <h5 class="description">Updated : 2024-06-16</h5>
                     <h4 class="description">
                         Background:

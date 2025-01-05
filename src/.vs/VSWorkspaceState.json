@@ -1,9 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Home",
-    "\\Project"
+    "\\Project",
+    "\\Project\\AirshipProject",
+    "\\Project\\AirshipProject\\Design",
+    "\\Project\\AirshipProject\\Design\\Section",
+    "\\Project\\AirshipProject\\Stage0\\Section",
+    "\\Project\\AirshipProject\\Stage1\\Section",
+    "\\Project\\AirshipProject\\Stage2\\Section",
+    "\\Project\\AirshipProject\\Stage3\\Section"
   ],
-  "SelectedNode": "\\Project\\ArcheryVR.jsx",
+  "SelectedNode": "\\Project\\AirshipProject\\Design\\Section\\World.jsx",
   "PreviewInSolutionExplorer": false
 }
