@@ -5,7 +5,7 @@ const Info = {
         "Type": "Completed"
     },
     "LastUpdate": "2024-08-08",
-    "GameEngine": "N/A",
+    "GameEngine": "TeamCity",
     "TimeTaken": [
         "Full working - 3 weeks"
     ],
@@ -14,10 +14,7 @@ const Info = {
         "At the time, I am iterating through the Interior Deco Project and I thought it would be a good idea to automate the building process for the rapid iteration i was doing.",
         "The project finally took 3 weeks of work in between job hunting."
     ],
-    "UrlReadMore": {
-        "Link": "/portfolio/#/InterDeco",
-        "Label": "Read More"
-    },
+    "UrlReadMore": {},
     "Priority" : 2
 
 }

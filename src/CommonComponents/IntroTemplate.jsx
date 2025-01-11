@@ -74,19 +74,28 @@ const IntroTemplate = ({ Info }) => {
                                     })
                                 }
 
-                                <br></br>
+                                
                                 {
-                                    JSON.stringify(Data.UrlReadMore) !== "{}"
+                                    Data.UrlReadMore
                                         ?
                                         <>
-                                            <p class="description">
-                                                More in detail page.
-                                            </p>
-                                            <a href={Data.UrlReadMore.Link} class="description">
-                                                <button class="button">{Data.UrlReadMore.Label}</button>
-                                            </a>
+                                            <br></br>
+                                            {
+                                                JSON.stringify(Data.UrlReadMore) !== "{}"
+                                                    ?
+                                                    <>
+                                                        <p class="description">
+                                                            More in detail page.
+                                                        </p>
+                                                        <a href={Data.UrlReadMore.Link} class="description">
+                                                            <button class="button">{Data.UrlReadMore.Label}</button>
+                                                        </a>
+                                                    </>
+                                                    : null
+                                            }
                                         </>
-                                        : null
+                                        :
+                                        null
                                 }
                             </div>
                         </div>

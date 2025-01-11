@@ -7,7 +7,7 @@ import * as Subsection from "./Section"
 function Main() {
     return (
         <div className="App">
-            <Subsection.V030></Subsection.V030>
+            <Subsection.V042></Subsection.V042>
             <CommonComp.ReturnButton link='/portfolio' title='Back to Highlights'></CommonComp.ReturnButton>
             <br></br>
             <br></br>

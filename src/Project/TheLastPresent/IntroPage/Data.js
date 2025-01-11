@@ -19,16 +19,16 @@ const Info = {
         "Link": "/portfolio/#/TheLastPresent",
         "Label": "Read More"
     },
-    // "Video": {
-    //     "Title": "Temp",
-    //     "VideoDetail": [
-    //         {
-    //             "Link": "YQHa2gsCk7I",
-    //             "Caption" : ""
-    //         }
-    //     ],
-    //     "Description": "Temp"
-    // },
+    "Video": {
+        "Title": "The Last Present - Version 0.3.0 (Game Jam Version)",
+        "VideoDetail": [
+            {
+                "Link": "Od5BqqAO56k",
+                "Caption" : ""
+            }
+        ],
+        "Description": "Showcase of this project (edited for easier understanding)"
+    },
     "Links": {
         "Repository": {
             "Link": "https://github.com/felixchiu99/GameJam36_9",

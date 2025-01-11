@@ -1,11 +1,12 @@
+import Info from "./AirshipProject/Info";
 import * as InfoIndexes from "./indexInfo";
 
 const InfoList = [
+    InfoIndexes.TheLastPresent,
+    InfoIndexes.TeamCityExperiment,
     InfoIndexes.InteriorDeco,
     InfoIndexes.AirshipProject,
-    InfoIndexes.StuBrew,
-    InfoIndexes.InkHell,
-    InfoIndexes.ArcheryVR
+    InfoIndexes.StuBrew
 ]
 
 export default InfoList;

@@ -18,6 +18,7 @@ import AirshipStage3 from './Project/AirshipProject/Stage3/Main';
 import InteriorDeco from './Project/InteriorDeco/Main';
 
 import TheLastPresent from './Project/TheLastPresent/Main';
+import ModelVillage from './Project/ModelVillage/Main';
 
 function App() {
     return (
@@ -48,6 +49,8 @@ function App() {
                 <Route path="/InterDeco" element={<InteriorDeco />} >
                 </Route>
                 <Route path="/TheLastPresent" element={<TheLastPresent />} >
+                </Route>
+                <Route path="/ModelVillage" element={<ModelVillage />} >
                 </Route>
             </Routes>
         </div>

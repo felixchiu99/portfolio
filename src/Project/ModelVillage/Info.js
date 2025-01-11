@@ -5,10 +5,11 @@ const Info = {
         "Unreal Engine",
         "C++",
         "Blueprint",
-        "Game Jam"
+        "Game Jam",
+        "Cancelled"
     ],
-    Date_Start: "2024-12-28",
-    Date_End: "2024-12-29",
+    Date_Start: "2024-08-16",
+    Date_End: "2024-08-19",
     Intro: Data
 }
 export default Info;

@@ -1,45 +1,42 @@
 const Info = {
-    Title: "Model Village ",
+    Title: "Model Village (GMTK 2024 game jam)",
     Status: {
-        "Name": "Version 0.3.0 Game Jam Submission",
+        "Name": "Version 0.4.2 Game Jam Submission",
         "Type": "Completed"
     },
     "LastUpdate": "2025-01-04",
     "GameEngine": "Unreal Engine 5",
     "TimeTaken": [
-        "Version 0.3.0 Game Jam Submission - 28 Hrs (36 hrs)"
+        "Version 0.4.2 Game Jam Submission - 38 Hrs (54 hrs)"
     ],
     "Description": [
-        "The Last Present is the submission for a 36 hour game jam (Topic: present) in 2024 Dec.",
-        "In this Game, you have possessed a present and need to deliver it as fast as possible to the goal.",
-        "This is the second Game jam I have ever participated.",
-        "My Personal goal is to complete the a game with a proper \"End\" within the time limit."
+        
     ],
     "UrlReadMore": {
-        "Link": "/portfolio/#/TheLastPresent",
+        "Link": "/portfolio/#/ModelVillage",
         "Label": "Read More"
     },
-    // "Video": {
-    //     "Title": "Temp",
-    //     "VideoDetail": [
-    //         {
-    //             "Link": "YQHa2gsCk7I",
-    //             "Caption" : ""
-    //         }
-    //     ],
-    //     "Description": "Temp"
-    // },
+    "Video": {
+        "Title": "Version 0.4.2 Game Jam Submission",
+        "VideoDetail": [
+            {
+                "Link": "Y9fB1D7mtvQ",
+                "Caption" : ""
+            }
+        ],
+        "Description": "The Submitted version of this project"
+    },
     "Links": {
         "Repository": {
-            "Link": "https://github.com/felixchiu99/GameJam36_9",
+            "Link": "https://github.com/felixchiu99/ModelVillage",
             "Label": "Repository"
         },
         "ReleasePage": {
-            "Link": "https://yogchiu.itch.io/the-last-present",
+            "Link": "https://yogchiu.itch.io/modelvillage",
             "Label": "Link to Itch Page"
         }
     },
-    "Priority" : 1
+    "Priority" : 3
 
 }
 export default Info;

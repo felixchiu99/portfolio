@@ -9,6 +9,7 @@ export default function Component() {
             
                 <header className="Project">
                     <h2>The Last Present V0.3.0</h2>
+                    <h3>Submission for "Devs That Jam 36hr Challenge #9"</h3>
                     <h5 class="description">Updated : 2025-01-04</h5>
                     <h4 class="description">
                         Background:
@@ -24,8 +25,8 @@ export default function Component() {
                         <div class="round" style={{ background: "white", color: "black" }}>
                             <h4>Version 0.3.0 (Game Jam Version)</h4>
                             <div style={{ width: "100%", "padding-right": "1%", float: "Left" }}>
-                                {/* <CommonComp.YoutubeEmbed embedId="bdKNY9oh43s" />
-                                <p>The version 1 of this project</p> */}
+                                <CommonComp.YoutubeEmbed embedId="Od5BqqAO56k" />
+                                <p>Showcase of this project (edited for easier understanding)</p> 
                             </div>
                             <div>
                                 <a href="https://yogchiu.itch.io/the-last-present">
@@ -189,13 +190,31 @@ export default function Component() {
                         <li>Basic NPC movement</li>
                         <li>Basic Menu system</li>
                     </ul>
+                    <div style={{ width: "40%", "padding": "2%", float: "Right" }}>
+                        <div class="round" style={{ background: "white", color: "black" }}>
+                            
+                            <div style={{  width: "49%", "padding-right": "1%", float: "Left" }}>
+                                <img style={{ width: "100%" }} src="https://drive.google.com/thumbnail?id=1H4bwEsMxcbVrHR5F0S7aVTVkPTjaducJ" alt="Normal view from when playing" />
+                                <p style={{ "text-align": "center"}}>Player's View when playing.</p>
+                            </div>
+                            <div style={{  width: "49%", "padding-right": "1%", float: "Left" }}>
+                                <img style={{ width: "100%" }} src="https://drive.google.com/thumbnail?id=1x8hE4zSHSNaITdHfLzIp6uNmDDvphBny" alt="Normal view from when playing" />
+                                <p style={{ "text-align": "center"}}>Player's Being Picked up.</p>
+                            </div>
+                            <div>
+                                <img style={{ width: "50%" }} src="https://drive.google.com/thumbnail?id=1bHBrIfkL7q--m4Xtt1E5cRfwXvDwE_xR" alt="Normal view from when playing" />
+                                <p style={{ "text-align": "center"}}>Example of Simple Menus</p>
+                            </div>
+                        </div>
+                    </div>
                     
                     <h4 class="description">
                         Room for improvement:
                     </h4>
                     <ul class="description">
-                        <li>BUG - Timer overflow after ~ 2 minutes</li>
+                        <li>BUG - Timer overflow after ~ 3 minutes</li>
                         <li>BUG - NPC not always spawn </li>
+                        <li>BUG - Being picked up even with incorrect temptation effect </li>
                         <li>Improvement - Lure VFX </li>
                         <li>Improvement - Temptation VFX </li>
                         <li>Improvement - General SFX </li>
@@ -214,8 +233,9 @@ export default function Component() {
                         there is significant improvement in my game making ability.
                     </p>
                     <p class="description">
-                        Next time, I want to maintain this ability for finishing in time,
-                        while allowing more depth in game mechanics/goals.
+                        Next time, I want to maintain this ability for finishing in time, 
+                        allocate myself at least 2 hrs for polishing bugs, 
+                        and allowing more depth in game mechanics/goals.
                     </p>
                     <p class="description">
                         I plan to achieve this via consolidating some reusable systems (menu, saves, character, AI),

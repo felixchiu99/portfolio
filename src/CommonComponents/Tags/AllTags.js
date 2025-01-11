@@ -20,6 +20,7 @@ const AllTags = [
     "Modding",
     "Experiment",
     "Group Project",
-    "Others"
+    "Others",
+    "Cancelled"
 ]
 export default AllTags;
